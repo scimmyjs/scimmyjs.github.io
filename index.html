@@ -23,14 +23,15 @@
         
         <h2 class="page-title"><span class="ancestors"></span>SCIMMY - SCIM m(ade eas)y</h2>
     </header>
-    <nav><h3>API</h3><ul><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
+    <article class="content-container main-page">
+    <header class="section-header">
+        <h2 class="page-title"><span class="ancestors"></span>SCIMMY - SCIM m(ade eas)y</h2>
+    </header>
     
-    <section class="main-page">
-        <article class="readme"><h6 id=""><a href="https://github.com/sleelin/scimmy"><img src="https://raw.githubusercontent.com/sleelin/scimmy/main/src/scimmy.png" alt="SCIMMY"></a></h6>
+        <section class="readme"><h6 id=""><a href="https://github.com/sleelin/scimmy"><img src="https://raw.githubusercontent.com/sleelin/scimmy/main/src/scimmy.png" alt="SCIMMY"></a></h6>
 <p>SCIM 2.0 (System for Cross-domain Identity Management) is a set of standards (<a href="https://datatracker.ietf.org/doc/html/rfc7643">RFC7643</a> and <a href="https://datatracker.ietf.org/doc/html/rfc7644">RFC7644</a>)
 designed to simplify resource provisioning and identity management in cloud-based applications and services.
 SCIMMY aims to make it easier to rapidly implement code that sends and receives data conforming to these standards.
@@ -61,9 +62,9 @@ SCIMMY.Resources.declare(class MyResourceType extends SCIMMY.Types.Resource {
 });
 </code></pre>
 <h2 id="api">API</h2>
-<div class="container-overview">
-                
-                    <div class="overview-description"><p>SCIMMY provides the following interfaces:</p>
+<section id="usage" class="class-usage container-overview">
+        
+        <div class="description"><p>SCIMMY provides the following interfaces:</p>
 <ul>
 <li><code><a href="SCIMMY.Config.html">SCIMMY.Config</a></code>
 <ul>
@@ -93,184 +94,18 @@ SCIMMY.Resources.declare(class MyResourceType extends SCIMMY.Types.Resource {
 </ul>
 </li>
 </ul></div>
-                    <section class="details">
-    <dl class="details-list">
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <div class="tag-source">
-        <dt>Source:</dt>
-        
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/scimmy.js#L7">src/scimmy.js, line 7</a></li>
-                </ul>
-            </dd>
-        
-    </div>
-
-        
-
-        
-        
-        
-        
-    </dl>
-</section>
-
-    <section class="props">
-        <h5 class="subsection-title">Properties:</h5>
-        
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            
-            <th class="last">Description</th>
-        </tr>
-    </thead>
-    <tbody>
+    </section></section>
     
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Config<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
+</article>
 
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Config.html">SCIMMY.Config</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>SCIM Service Provider Configuration container store</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Types<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Types.html">SCIMMY.Types</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>SCIMMY classes for implementing schemas and resource types</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Messages<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Messages.html">SCIMMY.Messages</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>Implementations of non-resource SCIM "message" schemas, such as ListResponse and PatchOp</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Schemas<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Schemas.html">SCIMMY.Schemas</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>Container store for declaring and retrieving schemas implemented by a service provider.<br>
-Also provides access to bundled schema implementations of <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4">SCIM Core Resource Schemas</a>.</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Resources<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Resources.html">SCIMMY.Resources</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>Container store for declaring and retrieving resource types implemented by a service provider.<br>
-Also provides access to bundled resource type implementations of <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4">SCIM Core Resource Types</a>.</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-    </section>
-
-                    
-                
-            </div></article>
-    </section>
-
-
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><a href="#installation-and-usage">Installation and Usage</a></li><li><a href="#api">API</a></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

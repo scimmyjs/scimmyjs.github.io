@@ -23,35 +23,23 @@
         
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Messages</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4 class="active"><a href="SCIMMY.Messages.html" class="active">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4 class="active"><a href="SCIMMY.Messages.html" class="active">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                
-            
-            <div class="container-overview">
-                
-                    <div class="overview-description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Messages</code>, that includes tools for constructing and consuming SCIM-compliant data messages to be sent to, or received from, a SCIM service provider.</p>
-<h2 id="messages-classes">Messages Classes</h2>
-<h5 id="%7B%40link-scimmy.messages.error%7D"><code><a href="SCIMMY.Messages.Error.html">SCIMMY.Messages.Error</a></code></h5>
-<ul>
-<li>Formats exceptions to conform to the <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">HTTP Status and Error Response Handling</a> section of the SCIM protocol, ensuring HTTP status codes and scimType error detail keyword pairs are valid.</li>
-<li>When used to parse service provider responses, throws a new instance of <code>SCIMMY.Types.Error</code> with details sourced from the message.</li>
-</ul>
-<h5 id="%7B%40link-scimmy.messages.listresponse%7D"><code><a href="SCIMMY.Messages.ListResponse.html">SCIMMY.Messages.ListResponse</a></code></h5>
-<ul>
-<li>Formats supplied service provider resources as <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse messages</a>, handling pagination and sort when required.</li>
-</ul>
-<h5 id="%7B%40link-scimmy.messages.patchop%7D"><code><a href="SCIMMY.Messages.PatchOp.html">SCIMMY.Messages.PatchOp</a></code></h5>
-<ul>
-<li>Parses <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.5.2">PatchOp messages</a>, making sure all specified &quot;Operations&quot; are valid and conform with the SCIM protocol.</li>
-<li>Provides a method to atomically apply PatchOp operations to a resource instance, handling any exceptions that occur along the way.</li>
-</ul></div>
-                    <section class="details">
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Messages</h2>
+        
+        
+    </header>
+    <section id="usage" class="class-usage container-overview">
+        
+        <div class="description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Messages</code>, that includes tools for constructing and
+consuming SCIM-compliant data messages to be sent to, or received from, a SCIM service provider.</p></div>
+        
+    </section>
+    
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -63,6 +51,7 @@
         
         
         
+
         
         
         
@@ -72,14 +61,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/messages.js#L5">src/lib/messages.js, line 5</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages.js#L5">src/lib/messages.js, line 5</a></dd>
         
     </div>
 
@@ -89,53 +75,86 @@
         
         
         
+        
     </dl>
 </section>
-
-                    
-                
-            </div>
-        </header>
+    
+    
+    
+    
+    
+    <section id="classes" class="child-classes">
+        <h3 class="subsection-title">Classes</h3>
         
-        <article>
-            
-
-            
-                <h3 class="subsection-title">Classes</h3>
-                <dl>
-                    
-                        <dt><a href="SCIMMY.Messages.Error.html">Error</a></dt>
-                        <dd></dd>
-                    
-                        <dt><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></dt>
-                        <dd><p>Formats supplied service provider resources as <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse messages</a>, handling pagination and sort when required.</p></dd>
-                    
-                        <dt><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></dt>
-                        <dd></dd>
-                    
-                </dl>
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-        </article>
+            <ul class="subsection-list">
+                
+                    <li>
+                        <div class="name">
+                            <code><a href="SCIMMY.Messages.Error.html">SCIMMY.Messages.Error</a></code>
+                        </div>
+                        
+                            
+                                <ul>
+<li>Formats exceptions to conform to the <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">HTTP Status and Error Response Handling</a> section of the SCIM protocol, ensuring HTTP status codes and scimType error detail keyword pairs are valid.</li>
+<li>When used to parse service provider responses, throws a new instance of <code>SCIMMY.Types.Error</code> with details sourced from the message.</li>
+</ul>
+                            
+                        
+                    </li>
+                
+                    <li>
+                        <div class="name">
+                            <code><a href="SCIMMY.Messages.ListResponse.html">SCIMMY.Messages.ListResponse</a></code>
+                        </div>
+                        
+                            
+                                <ul>
+<li>Formats supplied service provider resources as <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse messages</a>, handling pagination and sort when required.</li>
+</ul>
+                            
+                        
+                    </li>
+                
+                    <li>
+                        <div class="name">
+                            <code><a href="SCIMMY.Messages.PatchOp.html">SCIMMY.Messages.PatchOp</a></code>
+                        </div>
+                        
+                            
+                                <ul>
+<li>Parses <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.5.2">PatchOp messages</a>, making sure all specified &quot;Operations&quot; are valid and conform with the SCIM protocol.</li>
+<li>Provides a method to atomically apply PatchOp operations to a resource instance, handling any exceptions that occur along the way.</li>
+</ul>
+                            
+                        
+                    </li>
+                
+            </ul>
+        
     </section>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+</article>
+
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

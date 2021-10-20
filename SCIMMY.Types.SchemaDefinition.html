@@ -23,39 +23,35 @@
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>SchemaDefinition</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li class="active"><a href="SCIMMY.Types.SchemaDefinition.html" class="active">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li class="active"><a href="SCIMMY.Types.SchemaDefinition.html" class="active">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                <div class="class-description"><p>SCIM Schema Definition</p></div>
-            
-            <div class="container-overview">
-                
-            </div>
-        </header>
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>SchemaDefinition</h2>
+        <div class="class-description"><p>SCIM Schema Definition</p></div>
+        <div class="class-summary"><ul>
+<li>Defines an underlying SCIM schema definition, containing the schema's URN namespace, friendly name, description, and collection of attributes that make up the schema.</li>
+<li>Provides a way to ensure all properties of a resource conform to their attribute definitions, as well as enabling JSON expression of schemas for consumption by other SCIM clients or service providers.</li>
+</ul></div>
+    </header>
+    <section id="usage" class="class-usage container-overview">
         
-            <article id="SchemaDefinition">
-    <header>
-    <div class="class-description"><p>SCIM Schema Definition</p></div>
-    
-        <h2>Constructor</h2>
+            <h3 class="subsection-title">Usage</h3>
         
-            <h4 class="name">
-                <span class="type-signature"> </span>new <span class="ancestors">SCIMMY.Types.</span>SchemaDefinition<span class="signature">(name, id, description<span class="signature-attributes">opt</span>, attributes<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Constructs an instance of a full SCIM schema definition</p></div>
+        
+            <div class="class-signature">
+                <pre class="signature name">
+                    <code>
+                        new <span class="ancestors">SCIMMY.Types.</span>SchemaDefinition<span class="signature">(name, id, description<span class="signature-attributes">opt</span>, attributes<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+                    </code>
+                </pre>
+            </div>
+        
+    </section>
     
-</header>
-    <section class="details">
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -67,6 +63,7 @@
         
         
         
+
         
         
         
@@ -76,14 +73,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L8">src/lib/types/definition.js, line 8</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L11">src/lib/types/definition.js, line 11</a></dd>
         
     </div>
 
@@ -93,11 +87,117 @@
         
         
         
+        
+    <div class="detail props">
+        <dt>Properties:</dt>
+        
+            <dd>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        name<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>friendly name of the SCIM schema</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        id<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>URN namespace of the SCIM schema</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        description<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>human-readable description of the schema</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        attributes<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>[]</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>attributes that make up the schema</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</dd>
+        
+    </div>
+
     </dl>
 </section>
-
     
-    <section class="params">
+    <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -191,7 +291,7 @@
             
 
             <td class="type">
-    <span class="param-type">Array.&lt;<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>></span>
+    <span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>[]</span>
 </td>
 
             
@@ -209,47 +309,28 @@
 
     </section>
 
-
     
     
     
     
-</article>
+    
+    
+    
+    
+    
+    
+    
+    <section id="methods" class="child-methods">
+        <h3 class="subsection-title">Methods</h3>
         
-        <article>
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-                <section>
-                    <h3 class="subsection-title">Methods</h3>
-                    <article id="describe">
+            <article id="describe">
     <header>
-    
-    
+        <h4 class="name">describe<span class="signature">(basepath<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature"> </span>describe<span class="signature">(basepath<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Get the SCIM schema definition for consumption by clients</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -261,6 +342,7 @@
         
         
         
+
         
         
         
@@ -270,14 +352,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L44">src/lib/types/definition.js, line 44</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L51">src/lib/types/definition.js, line 51</a></dd>
         
     </div>
 
@@ -287,11 +366,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -334,26 +413,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>the schema definition for consumption by clients</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type">Object</span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type">Object</span>}</span></dd>
         
     </div>
 
@@ -367,22 +441,12 @@
     
 </article><article id="attribute">
     <header>
-    
-    
+        <h4 class="name">attribute<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>, <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature"> </span>attribute<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>,<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Find an attribute or extension instance belonging to the schema definition by its name</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -394,6 +458,7 @@
         
         
         
+
         
         
         
@@ -403,14 +468,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L58">src/lib/types/definition.js, line 58</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L65">src/lib/types/definition.js, line 65</a></dd>
         
     </div>
 
@@ -420,11 +482,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -465,26 +527,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>the Attribute or SchemaDefinition instance with matching name</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></dd>
         
     </div>
 
@@ -498,22 +555,12 @@
     
 </article><article id="extend">
     <header>
-    
-    
+        <h4 class="name">extend<span class="signature">(extensions, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature"> </span>extend<span class="signature">(extensions, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Extend a schema definition instance by mixing in other schemas or attributes</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -525,6 +572,7 @@
         
         
         
+
         
         
         
@@ -534,14 +582,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L108">src/lib/types/definition.js, line 108</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L115">src/lib/types/definition.js, line 115</a></dd>
         
     </div>
 
@@ -551,11 +596,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -580,7 +625,7 @@
             
 
             <td class="type">
-    <span class="param-type">Array.&lt;(<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)></span>
+    <span class="param-type">(<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)[]</span>
 </td>
 
             
@@ -621,26 +666,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>this schema definition instance for chaining</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></dd>
         
     </div>
 
@@ -654,22 +694,12 @@
     
 </article><article id="truncate">
     <header>
-    
-    
+        <h4 class="name">truncate<span class="signature">(attributes)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature"> </span>truncate<span class="signature">(attributes)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Remove an attribute or subAttribute from a schema or attribute definition</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -681,6 +711,7 @@
         
         
         
+
         
         
         
@@ -690,14 +721,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L139">src/lib/types/definition.js, line 139</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L146">src/lib/types/definition.js, line 146</a></dd>
         
     </div>
 
@@ -707,11 +735,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -736,7 +764,7 @@
             
 
             <td class="type">
-    <span class="param-type">String</span>|<span class="param-type">Array.&lt;String></span>|<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type">Array.&lt;<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>></span>
+    <span class="param-type">String</span>|<span class="param-type">String[]</span>|<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>[]</span>
 </td>
 
             
@@ -752,26 +780,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>this schema definition instance for chaining</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></dd>
         
     </div>
 
@@ -785,22 +808,12 @@
     
 </article><article id="coerce">
     <header>
-    
-    
+        <h4 class="name">coerce<span class="signature">(data, direction<span class="signature-attributes">opt</span>, basepath<span class="signature-attributes">opt</span>, filters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature"> </span>coerce<span class="signature">(data, direction<span class="signature-attributes">opt</span>, basepath<span class="signature-attributes">opt</span>, filters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Coerce a given value by making sure it conforms to all schema attributes' characteristics</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -812,6 +825,7 @@
         
         
         
+
         
         
         
@@ -821,14 +835,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/definition.js#L167">src/lib/types/definition.js, line 167</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/definition.js#L174">src/lib/types/definition.js, line 174</a></dd>
         
     </div>
 
@@ -838,11 +849,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -954,26 +965,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>the coerced value, conforming to all schema attributes' characteristics</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type">Object</span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type">Object</span>}</span></dd>
         
     </div>
 
@@ -986,19 +992,24 @@
     
     
 </article>
-                </section>
-            
-
-            
-
-            
-        </article>
+        
     </section>
 
+    
+    
+    
+    
+
+    
+</article>
+
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#describe">describe</a></li><li><a href="#attribute">attribute</a></li><li><a href="#extend">extend</a></li><li><a href="#truncate">truncate</a></li><li><a href="#coerce">coerce</a></li></ul></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

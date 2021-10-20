@@ -23,39 +23,35 @@
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>PatchOp</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li class="active"><a href="SCIMMY.Messages.PatchOp.html" class="active">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li class="active"><a href="SCIMMY.Messages.PatchOp.html" class="active">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                <div class="class-description"><p>SCIM Patch Operation Message Type</p></div>
-            
-            <div class="container-overview">
-                
-            </div>
-        </header>
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>PatchOp</h2>
+        <div class="class-description"><p>SCIM Patch Operation Message Type</p></div>
+        <div class="class-summary"><ul>
+<li>Parses <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.5.2">PatchOp messages</a>, making sure all specified &quot;Operations&quot; are valid and conform with the SCIM protocol.</li>
+<li>Provides a method to atomically apply PatchOp operations to a resource instance, handling any exceptions that occur along the way.</li>
+</ul></div>
+    </header>
+    <section id="usage" class="class-usage container-overview">
         
-            <article id="PatchOp">
-    <header>
-    <div class="class-description"><p>SCIM Patch Operation Message Type</p></div>
-    
-        <h2>Constructor</h2>
+            <h3 class="subsection-title">Usage</h3>
         
-            <h4 class="name">
-                <span class="type-signature"> </span>new <span class="ancestors">SCIMMY.Messages.</span>PatchOp<span class="signature">(request, resource)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Instantiate a new SCIM Patch Operation Message with relevant details</p></div>
+        
+            <div class="class-signature">
+                <pre class="signature name">
+                    <code>
+                        new <span class="ancestors">SCIMMY.Messages.</span>PatchOp<span class="signature">(request, resource)</span><span class="type-signature"></span>
+                    </code>
+                </pre>
+            </div>
+        
+    </section>
     
-</header>
-    <section class="details">
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -67,6 +63,7 @@
         
         
         
+
         
         
         
@@ -76,14 +73,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/messages/patchop.js#L15">src/lib/messages/patchop.js, line 15</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/patchop.js#L27">src/lib/messages/patchop.js, line 27</a></dd>
         
     </div>
 
@@ -93,11 +87,54 @@
         
         
         
+        
+    <div class="detail props">
+        <dt>Properties:</dt>
+        
+            <dd>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        Operations<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">Object[]</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>list of SCIM-compliant patch operations to apply to the given resource</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</dd>
+        
+    </div>
+
     </dl>
 </section>
-
     
-    <section class="params">
+    <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -159,47 +196,28 @@
 
     </section>
 
-
     
     
     
     
-</article>
+    
+    
+    
+    
+    
+    
+    
+    <section id="methods" class="child-methods">
+        <h3 class="subsection-title">Methods</h3>
         
-        <article>
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-                <section>
-                    <h3 class="subsection-title">Methods</h3>
-                    <article id="apply">
+            <article id="apply">
     <header>
-    
-    
+        <h4 class="name"><span class="type-signature">(async) </span>apply<span class="signature">(finalise<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>, <a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>[]}</span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature">(async) </span>apply<span class="signature">(finalise<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>,Array.&lt;<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>>}</span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Apply patch operations to a resource as defined by the PatchOp instance</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -211,6 +229,7 @@
         
         
         
+
         
         
         
@@ -220,14 +239,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/messages/patchop.js#L104">src/lib/messages/patchop.js, line 104</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/patchop.js#L114">src/lib/messages/patchop.js, line 114</a></dd>
         
     </div>
 
@@ -237,11 +253,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -282,26 +298,21 @@
 
     </section>
 
-
     
     
     <section class="returns">
         
-        <h5>Returns:</h5>
+        <h5 class="subsection-title">Returns:</h5>
         
             
                 
                     <div class="param-desc"><p>an instance of the resource modified as per the included patch operations</p></div>
                     
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span>|<span class="param-type">Array.&lt;<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>></span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span>|<span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>[]</span>}</span></dd>
         
     </div>
 
@@ -314,19 +325,98 @@
     
     
 </article>
-                </section>
-            
-
-            
-
-            
-        </article>
+        
     </section>
 
+    
+    
+    
+    
+
+    
+    <section id="constants" class="child-constants">
+        <h3 class="subsection-title">Constants</h3>
+        
+            <article id="~ValidPatchOperations">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidPatchOperations<span class="type-signature">: String[]</span></h4>
+        
+        <div class="description"><p>List of valid SCIM patch operations</p></div>
+    </header>
+    
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>["add","remove","replace"]</code></pre></dd>
+        
+    </div>
+
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">String[]</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/patchop.js#L14">src/lib/messages/patchop.js, line 14</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+        
+    </dl>
+</section>
+    
+    
+    
+    
+    
+</article>
+        
+    </section>
+
+</article>
+
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#apply"><span class="type-signature">(async) </span>apply</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidPatchOperations">ValidPatchOperations</a></li></ul></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

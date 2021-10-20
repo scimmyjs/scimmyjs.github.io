@@ -23,39 +23,35 @@
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Schema</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li class="active"><a href="SCIMMY.Types.Schema.html" class="active">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li class="active"><a href="SCIMMY.Types.Schema.html" class="active">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                <div class="class-description"><p>SCIM Schema</p></div>
-            
-            <div class="container-overview">
-                
-            </div>
-        </header>
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Schema</h2>
+        <div class="class-description"><p>SCIM Schema</p></div>
+        <div class="class-summary"><ul>
+<li>Extendable class which provides the ability to construct resource instances with automated validation of conformity to a resource's schema definition.</li>
+<li>Once instantiated, any modifications will also be validated against the attached schema definition's matching attribute configuration (e.g. for mutability or canonical values).</li>
+</ul></div>
+    </header>
+    <section id="usage" class="class-usage container-overview">
         
-            <article id="Schema">
-    <header>
-    <div class="class-description"><p>SCIM Schema</p></div>
-    
-        <h2>Constructor</h2>
+            <h3 class="subsection-title">Usage</h3>
         
-            <h4 class="name">
-                <span class="type-signature"> </span>new <span class="ancestors">SCIMMY.Types.</span>Schema<span class="signature">(data, direction<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Construct a resource instance after verifying schema compatibility</p></div>
+        
+            <div class="class-signature">
+                <pre class="signature name">
+                    <code>
+                        new <span class="ancestors">SCIMMY.Types.</span>Schema<span class="signature">(data, direction<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+                    </code>
+                </pre>
+            </div>
+        
+    </section>
     
-</header>
-    <section class="details">
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -67,6 +63,7 @@
         
         
         
+
         
         
         
@@ -76,14 +73,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/schema.js#L9">src/lib/types/schema.js, line 9</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/schema.js#L12">src/lib/types/schema.js, line 12</a></dd>
         
     </div>
 
@@ -93,11 +87,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -163,38 +157,27 @@
 
     </section>
 
-
     
     
     
     
-</article>
+    
+    
+    
+    
+    
+    <section id="members" class="child-members">
+        <h3 class="subsection-title">Members</h3>
         
-        <article>
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-                <section>
-                    <h3 class="subsection-title">Members</h3>
-                    <article>
+            <article>
     <header>
         <h4 class="name" id=".definition">
             <span class="type-signature">(abstract, static) </span><span>definition</span><span class="type-signature">: <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>
         </h4>
-
         
         <div class="description"><p>Retrieves a schema's definition instance</p></div>
     </header>
-
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -206,15 +189,13 @@
         
         
         
+
+        
     
-    <div class="tag-type">
+    <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></li>
-                </ul>
-            </dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>}</span></dd>
         
     </div>
 
@@ -228,52 +209,41 @@
         
         
         
-    <div class="tag-source">
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/schema.js#L15">src/lib/types/schema.js, line 15</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/schema.js#L18">src/lib/types/schema.js, line 18</a></dd>
         
     </div>
 
         
 
+        
         
         
         
         
     </dl>
 </section>
-
+    
     
 </article>
-                </section>
-            
+        
+    </section>
 
-            
-                <section>
-                    <h3 class="subsection-title">Methods</h3>
-                    <article id=".extend">
+    
+    
+    <section id="methods" class="child-methods">
+        <h3 class="subsection-title">Methods</h3>
+        
+            <article id=".extend">
     <header>
-    
-    
+        <h4 class="name"><span class="type-signature">(static) </span>extend<span class="signature">(extension, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature">(static) </span>extend<span class="signature">(extension, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Extend a schema by mixing in other schemas or attributes</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -285,6 +255,7 @@
         
         
         
+
         
         
         
@@ -294,14 +265,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/schema.js#L32">src/lib/types/schema.js, line 32</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/schema.js#L35">src/lib/types/schema.js, line 35</a></dd>
         
     </div>
 
@@ -311,11 +279,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -340,7 +308,7 @@
             
 
             <td class="type">
-    <span class="param-type">Array.&lt;(<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)></span>
+    <span class="param-type">(<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)[]</span>
 </td>
 
             
@@ -381,29 +349,18 @@
 
     </section>
 
-
     
     
     
     
 </article><article id=".truncate">
     <header>
-    
-    
+        <h4 class="name"><span class="type-signature">(static) </span>truncate<span class="signature">(attributes)</span><span class="type-signature"></span></h4>
         
-        
-            <h4 class="name">
-                <span class="type-signature">(static) </span>truncate<span class="signature">(attributes)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Remove an attribute or subAttribute from the schema definition</p></div>
+    </header>
     
-</header>
-    <section class="details">
+    <section  class="details">
     <dl class="details-list">
         
         
@@ -415,6 +372,7 @@
         
         
         
+
         
         
         
@@ -424,14 +382,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/schema.js#L40">src/lib/types/schema.js, line 40</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/schema.js#L43">src/lib/types/schema.js, line 43</a></dd>
         
     </div>
 
@@ -441,11 +396,11 @@
         
         
         
+        
     </dl>
 </section>
-
     
-    <section class="params">
+    <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -470,7 +425,7 @@
             
 
             <td class="type">
-    <span class="param-type">String</span>|<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type">Array.&lt;(String|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)></span>
+    <span class="param-type">String</span>|<span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a></span>|<span class="param-type">(String|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)[]</span>
 </td>
 
             
@@ -486,25 +441,29 @@
 
     </section>
 
-
     
     
     
     
 </article>
-                </section>
-            
-
-            
-
-            
-        </article>
+        
     </section>
 
+    
+    
+    
+    
+
+    
+</article>
+
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.definition"><span class="type-signature">(abstract, static) </span>definition</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.extend"><span class="type-signature">(static) </span>extend</a></li><li><a href="#.truncate"><span class="type-signature">(static) </span>truncate</a></li></ul></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

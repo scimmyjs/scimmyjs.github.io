@@ -23,39 +23,34 @@
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Error</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li class="active"><a href="SCIMMY.Types.Error.html" class="active">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li class="active"><a href="SCIMMY.Types.Error.html" class="active">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                <div class="class-description"><p>SCIM Error</p></div>
-            
-            <div class="container-overview">
-                
-            </div>
-        </header>
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Error</h2>
+        <div class="class-description"><p>SCIM Error</p></div>
+        <div class="class-summary"><ul>
+<li>Extends the native Error class and provides a way to express errors caused by SCIM protocol, schema conformity, filter expression, or other exceptions with details required by the SCIM protocol in <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">RFC7644§3.12</a>.</li>
+</ul></div>
+    </header>
+    <section id="usage" class="class-usage container-overview">
         
-            <article id="Error">
-    <header>
-    <div class="class-description"><p>SCIM Error</p></div>
-    
-        <h2>Constructor</h2>
+            <h3 class="subsection-title">Usage</h3>
         
-            <h4 class="name">
-                <span class="type-signature"> </span>new <span class="ancestors">SCIMMY.Types.</span>Error<span class="signature">(status, scimType, message)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Instantiate a new error with SCIM error details</p></div>
+        
+            <div class="class-signature">
+                <pre class="signature name">
+                    <code>
+                        new <span class="ancestors">SCIMMY.Types.</span>Error<span class="signature">(status, scimType, message)</span><span class="type-signature"></span>
+                    </code>
+                </pre>
+            </div>
+        
+    </section>
     
-</header>
-    <section class="details">
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -67,6 +62,7 @@
         
         
         
+
         
         
         
@@ -76,14 +72,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/types/error.js#L5">src/lib/types/error.js, line 5</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/types/error.js#L7">src/lib/types/error.js, line 7</a></dd>
         
     </div>
 
@@ -93,11 +86,96 @@
         
         
         
+        
+    <div class="detail props">
+        <dt>Properties:</dt>
+        
+            <dd>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        status<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">Number</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>HTTP status code to be sent with the error</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        scimType<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>the SCIM detail error keyword as per <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">RFC7644§3.12</a></p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        message<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>a human-readable description of what caused the error to occur</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</dd>
+        
+    </div>
+
     </dl>
 </section>
-
     
-    <section class="params">
+    <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -180,38 +258,32 @@
 
     </section>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-    
-    
-    
     
 </article>
-        
-        <article>
-            
 
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-        </article>
-    </section>
-
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>

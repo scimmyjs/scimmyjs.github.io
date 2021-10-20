@@ -23,39 +23,35 @@
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>Error</h2>
     </header>
-    <nav><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li class="active"><a href="SCIMMY.Messages.Error.html" class="active">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
+    <nav class="page-nav"><h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li class="active"><a href="SCIMMY.Messages.Error.html" class="active">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul></nav>
     <main id="main">
         
-
-
-    <section>
-        <header>
-            
-                <div class="class-description"><p>SCIM Error Message Type</p></div>
-            
-            <div class="container-overview">
-                
-            </div>
-        </header>
+    <article class="content-container class-definition">
+    <header class="section-header">
+        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>Error</h2>
+        <div class="class-description"><p>SCIM Error Message Type</p></div>
+        <div class="class-summary"><ul>
+<li>Formats exceptions to conform to the <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">HTTP Status and Error Response Handling</a> section of the SCIM protocol, ensuring HTTP status codes and scimType error detail keyword pairs are valid.</li>
+<li>When used to parse service provider responses, throws a new instance of <code>SCIMMY.Types.Error</code> with details sourced from the message.</li>
+</ul></div>
+    </header>
+    <section id="usage" class="class-usage container-overview">
         
-            <article id="Error">
-    <header>
-    <div class="class-description"><p>SCIM Error Message Type</p></div>
-    
-        <h2>Constructor</h2>
+            <h3 class="subsection-title">Usage</h3>
         
-            <h4 class="name">
-                <span class="type-signature"> </span>new <span class="ancestors">SCIMMY.Messages.</span>Error<span class="signature">(ex)</span><span class="type-signature"></span>
-            </h4>
-        
-        
-    
-
-    
         <div class="description"><p>Instantiate a new SCIM Error Message with relevant details</p></div>
+        
+            <div class="class-signature">
+                <pre class="signature name">
+                    <code>
+                        new <span class="ancestors">SCIMMY.Messages.</span>Error<span class="signature">(ex)</span><span class="type-signature"></span>
+                    </code>
+                </pre>
+            </div>
+        
+    </section>
     
-</header>
-    <section class="details">
+    <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -67,6 +63,7 @@
         
         
         
+
         
         
         
@@ -76,14 +73,11 @@
         
         
         
-    <div class="tag-source">
+        
+    <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd>
-                <ul class="dummy">
-                    <li><a href="https://github.com/sleelin/scimmy/blob/3a66fd8b63caa43e40d467b074565393c00f61ff/src/lib/messages/error.js#L15">src/lib/messages/error.js, line 15</a></li>
-                </ul>
-            </dd>
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/error.js#L38">src/lib/messages/error.js, line 38</a></dd>
         
     </div>
 
@@ -93,11 +87,96 @@
         
         
         
+        
+    <div class="detail props">
+        <dt>Properties:</dt>
+        
+            <dd>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        status<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>stringified HTTP status code to be sent with the error</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        scimType<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>the SCIM detail error keyword as per <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.12">RFC7644§3.12</a></p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        detail<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>a human-readable description of what caused the error to occur</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</dd>
+        
+    </div>
+
     </dl>
 </section>
-
     
-    <section class="params">
+    <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         
 
@@ -154,7 +233,7 @@
             
 
             <td class="type">
-    <span class="param-type">Number</span>
+    <span class="param-type"><a href="SCIMMY.Messages.Error.html#~ValidStatusTypes">SCIMMY.Messages.Error~ValidStatusTypes</a></span>
 </td>
 
             
@@ -219,38 +298,173 @@
 
     </section>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+    
+    <section id="constants" class="child-constants">
+        <h3 class="subsection-title">Constants</h3>
+        
+            <article id="~ValidStatusTypes">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidStatusTypes<span class="type-signature">: Number[]</span></h4>
+        
+        <div class="description"><p>HTTP response status codes specified by RFC7644§3.12</p></div>
+    </header>
+    
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>[307,308,400,401,403,404,409,412,413,500,501]</code></pre></dd>
+        
+    </div>
+
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">Number[]</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/error.js#L11">src/lib/messages/error.js, line 11</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+        
+    </dl>
+</section>
+    
+    
+    
+    
+    
+</article><article id="~ValidScimTypes">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidScimTypes<span class="type-signature">: String[]</span></h4>
+        
+        <div class="description"><p>SCIM detail error keywords specified by RFC7644§3.12</p></div>
+    </header>
+    
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>["uniqueness","tooMany","invalidFilter","mutability","invalidSyntax","invalidPath","noTarget","invalidValue","invalidVers","sensitive"]</code></pre></dd>
+        
+    </div>
+
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">String[]</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/messages/error.js#L23">src/lib/messages/error.js, line 23</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+        
+    </dl>
+</section>
+    
     
     
     
     
 </article>
         
-        <article>
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-        </article>
     </section>
 
+</article>
+
+<aside class="content-aside">
+    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidStatusTypes">ValidStatusTypes</a></li><li><a href="#~ValidScimTypes">ValidScimTypes</a></li></ul></li></ul></nav>
+</aside>
         <footer>
             Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
             
-            on Mon Oct 18 2021 17:11:21 GMT+1100 (Australian Eastern Daylight Time)
+            on Thu Oct 21 2021 00:30:33 GMT+1100 (Australian Eastern Daylight Time)
             
         </footer>
     </main>
