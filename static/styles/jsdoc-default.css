@@ -179,7 +179,7 @@ main > .content-aside {
 }
 
 main > .content-aside .content-nav {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 61px);
 }
 
 .main-page .readme h2 {
