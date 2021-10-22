@@ -21,7 +21,7 @@
                     <img alt="SCIMMY" src="static/assets/logo.png" />
                     
                 </a>
-                <span class="package-version type-signature">1.0.0</span>
+                <span class="package-version type-signature">0.9.9</span>
             </h1>
         
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>SchemaDefinition</h2>
@@ -68,7 +68,7 @@
             <div class="class-signature">
                 <pre class="signature name">
                     <code>
-                        new <span class="ancestors">SCIMMY.Types.</span>SchemaDefinition<span class="signature">(name, id, description<span class="signature-attributes">opt</span>, attributes<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+                        new <span class="ancestors">SCIMMY.Types.</span>SchemaDefinition<span class="signature">(name, id, description<span class="signature-attributes">opt</span>, attributes<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
                     </code>
                 </pre>
             </div>
@@ -223,7 +223,8 @@
     
     <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -331,6 +332,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -347,9 +349,10 @@
     <section id="methods" class="child-methods">
         <h3 class="subsection-title">Methods</h3>
         
-            <article id="describe">
+            <div class="subsection-content">
+                <article id="describe">
     <header>
-        <h4 class="name">describe<span class="signature">(basepath<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+        <h4 class="name">describe<span class="signature">(basepath<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {Object}</span></h4>
         
         <div class="description"><p>Get the SCIM schema definition for consumption by clients</p></div>
     </header>
@@ -396,7 +399,8 @@
     
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -435,6 +439,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -465,7 +470,7 @@
     
 </article><article id="attribute">
     <header>
-        <h4 class="name">attribute<span class="signature">(name)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>, <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
+        <h4 class="name">attribute<span class="signature">(name)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>, <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
         <div class="description"><p>Find an attribute or extension instance belonging to the schema definition by its name</p></div>
     </header>
@@ -512,7 +517,8 @@
     
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -549,6 +555,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -579,7 +586,7 @@
     
 </article><article id="extend">
     <header>
-        <h4 class="name">extend<span class="signature">(extensions, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
+        <h4 class="name">extend<span class="signature">(extensions, required<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
         <div class="description"><p>Extend a schema definition instance by mixing in other schemas or attributes</p></div>
     </header>
@@ -626,7 +633,8 @@
     
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -688,6 +696,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -718,7 +727,7 @@
     
 </article><article id="truncate">
     <header>
-        <h4 class="name">truncate<span class="signature">(attributes)</span><span class="type-signature"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
+        <h4 class="name">truncate<span class="signature">(attributes)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
         <div class="description"><p>Remove an attribute or subAttribute from a schema or attribute definition</p></div>
     </header>
@@ -765,7 +774,8 @@
     
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -802,6 +812,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -832,7 +843,7 @@
     
 </article><article id="coerce">
     <header>
-        <h4 class="name">coerce<span class="signature">(data, direction<span class="signature-attributes">opt</span>, basepath<span class="signature-attributes">opt</span>, filters<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+        <h4 class="name">coerce<span class="signature">(data, direction<span class="signature-attributes">opt</span>, basepath<span class="signature-attributes">opt</span>, filters<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {Object}</span></h4>
         
         <div class="description"><p>Coerce a given value by making sure it conforms to all schema attributes' characteristics</p></div>
     </header>
@@ -879,7 +890,8 @@
     
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
-        
+        <div class="subsection-content">
+            
 
 <table>
     <thead>
@@ -987,6 +999,7 @@
     </tbody>
 </table>
 
+        </div>
     </section>
 
     
@@ -1016,6 +1029,7 @@
     
     
 </article>
+            </div>
         
     </section>
 
@@ -1028,11 +1042,26 @@
 </article>
 
 <aside class="content-aside">
-    <nav class="content-nav"><h5 class="toc-title">Table of Contents</h5><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#describe">describe</a></li><li><a href="#attribute">attribute</a></li><li><a href="#extend">extend</a></li><li><a href="#truncate">truncate</a></li><li><a href="#coerce">coerce</a></li></ul></li></ul></nav>
+    
+    
+        <div class="toc-tiny">
+            <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>SchemaDefinition</h2>
+            <details class="content-toc">
+                <summary>Table of Contents</summary>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#describe">describe</a></li><li><a href="#attribute">attribute</a></li><li><a href="#extend">extend</a></li><li><a href="#truncate">truncate</a></li><li><a href="#coerce">coerce</a></li></ul></li></ul></nav>
+            </details>
+        </div>
+        <div class="toc-regular">
+            <nav class="content-nav">
+                <h5 class="toc-title">Table of Contents</h5>
+                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#describe">describe</a></li><li><a href="#attribute">attribute</a></li><li><a href="#extend">extend</a></li><li><a href="#truncate">truncate</a></li><li><a href="#coerce">coerce</a></li></ul></li></ul>
+            </nav>
+        </div>
+    
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-21T14:57:33.753Z
+             - 2021-10-22T05:37:48.327Z
         </footer>
     </main>
     <script>prettyPrint();</script>
