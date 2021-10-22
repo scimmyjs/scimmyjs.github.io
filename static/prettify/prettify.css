@@ -8,57 +8,70 @@
 
 @media screen {
   /* string content */
-  .hljs-addition, .hljs-bullet, .hljs-string, .hljs-symbol, .hljs-regexp, .hljs-selector-class, .hljs-selector-id, .str {
+  .str {
     color: #718c00; }
 
   /* a keyword */
-  .hljs-keyword, .hljs-selector-tag, .kwd {
+  .kwd {
     color: #8959a8; }
 
   /* a comment */
-  .hljs-comment, .hljs-quote, .com {
+  .com {
     color: #8e908c; }
 
   /* a type name */
-  .hljs-built_in, .hljs-link, .hljs-meta, .hljs-number, .hljs-params, .hljs-type, .typ, 
-  /* a function name */
-  .hljs-params, .hljs-type, .hljs-variable, .hljs-property, .fun {
+  .typ {
     color: #4271ae; }
 
   /* a literal value */
-  .hljs-literal, .lit, 
-  /* a markup attribute name */
-  .hljs-attribute, .atn,
-  /* a declaration */
-  .dec {
-    color: #f5871f;}
+  .lit {
+    color: #f5871f; }
 
   /* punctuation */
+  .pun {
+    color: #4d4d4c; }
+
   /* lisp open bracket */
+  .opn {
+    color: #4d4d4c; }
+
   /* lisp close bracket */
-  .pun, .opn, .clo {
+  .clo {
     color: #4d4d4c; }
 
   /* a markup tag name */
-  .hljs-tag, .tag, 
-  /* a variable name */
-  .var{
+  .tag {
     color: #c82829; }
-  
-  /* a markup attribute value */
-  .hljs-title, .atv {
-    color: #3e999f; } }
 
+  /* a markup attribute name */
+  .atn {
+    color: #f5871f; }
+
+  /* a markup attribute value */
+  .atv {
+    color: #3e999f; }
+
+  /* a declaration */
+  .dec {
+    color: #f5871f; }
+
+  /* a variable name */
+  .var {
+    color: #c82829; }
+
+  /* a function name */
+  .fun {
+    color: #4271ae; } }
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
-  .hljs-addition, .hljs-bullet, .hljs-string, .hljs-symbol, .str {
+  .str {
     color: #060; }
-  
-  .hljs-keyword, .hljs-selector-tag, .kwd {
+
+  .kwd {
     color: #006;
     font-weight: bold; }
-  
-  .hljs-comment, .hljs-quote, .com {
+
+  .com {
     color: #600;
     font-style: italic; }
 
@@ -75,8 +88,8 @@
   .tag {
     color: #006;
     font-weight: bold; }
-  
-  .hljs-attribute, .atn {
+
+  .atn {
     color: #404; }
 
   .atv {
