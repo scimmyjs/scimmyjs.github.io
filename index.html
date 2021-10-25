@@ -14,19 +14,19 @@
 
 <body>
     <header class="page-header">
-        
-            <h1 class="package-details">
-                <a class="package-name" href="./">
-                    <img alt="SCIMMY" src="static/assets/logo.png" />
-                    
-                </a>
+        <h1 class="package-details">
+            <a class="package-name" href="./">
+                <img alt="SCIMMY" src="static/assets/logo.png" />
+                
+            </a>
+            
                 <span class="package-version type-signature">0.9.9</span>
-            </h1>
-        
+            
+        </h1>
         <h2 class="page-title"><span class="ancestors"></span>SCIMMY - SCIM m(ade eas)y</h2>
         <div class="page-links">
             
-                <a href="https://github.com/sleelin/scimmy" title="View Source on GitHub">
+                <a href="https://github.com/scimmyjs/scimmy" title="View Source on GitHub">
                     <img alt="View Source on GitHub" src="static/assets/github.png" />
                 </a>
             
@@ -54,7 +54,7 @@
         <h2 class="page-title"><span class="ancestors"></span>SCIMMY - SCIM m(ade eas)y</h2>
     </header>
     
-        <section class="readme"><h6 id=""><a href="https://github.com/sleelin/scimmy"><img src="https://raw.githubusercontent.com/sleelin/scimmy/main/src/scimmy.png" alt="SCIMMY"></a></h6>
+        <section class="readme"><h6 id=""><a href="https://scimmyjs.github.io"><img src="https://raw.githubusercontent.com/sleelin/scimmy/main/src/scimmy.png" alt="SCIMMY"></a></h6>
 <p>SCIM 2.0 (System for Cross-domain Identity Management) is a set of standards (<a href="https://datatracker.ietf.org/doc/html/rfc7643">RFC7643</a> and <a href="https://datatracker.ietf.org/doc/html/rfc7644">RFC7644</a>)
 designed to simplify resource provisioning and identity management in cloud-based applications and services.
 SCIMMY aims to make it easier to rapidly implement code that sends and receives data conforming to these standards.
@@ -84,10 +84,38 @@ SCIMMY.Resources.declare(class MyResourceType extends SCIMMY.Types.Resource {
     /* ...the rest of your resource type implementation */
 });
 </code></pre>
+<h5 id="questions">Questions</h5>
+<ul>
+<li>
+<p><strong>Why use SCIMMY instead of some other SCIM-related package?</strong></p>
+<ul>
+<li>Many of the SCIM-related packages available seem to target specific cloud services like GitHub,
+act as API bridges, or only implement certain parts of the spec (like <a href="https://www.npmjs.com/package/scim-patch">SCIM-PATCH</a>
+or <a href="https://www.npmjs.com/package/scim2-parse-filter">scim2-parse-filter</a>). That's all well and good, but
+SCIMMY aims to implement the entire spec and integrate the protocol directly into your code.</li>
+<li>As retrieval/consumption of resources from your data model is left up to you to implement, you should be able to
+use other SCIM-related packages in conjunction with SCIMMY!</li>
+</ul>
+</li>
+<li>
+<p><strong>Will this work with cloud service X/Y/Z?</strong></p>
+<ul>
+<li>Hopefully, but if not, feel free to open an issue with details of the cloud service you are integrating with.
+SCIMMY has been tested against Azure AD, which didn't appear to have any issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>What about the actual SCIM protocol HTTP endpoints?</strong></p>
+<ul>
+<li>That's up to you, as we can't be sure exactly how you'd like to integrate SCIM in your code,
+however we have provided a package with express middleware which uses SCIMMY to implement the endpoints, called <a href="https://github.com/scimmyjs/scimmy-routers">SCIMMY Routers</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="api">API</h2>
 <section id="usage" class="class-usage container-overview">
         
-        <div class="description"><p>SCIMMY provides the following interfaces:</p>
+        <div class="description"><p>SCIMMY exports a singleton class which provides the following interfaces:</p>
 <ul>
 <li><code><a href="SCIMMY.Config.html">SCIMMY.Config</a></code>
 <ul>
@@ -129,20 +157,20 @@ SCIMMY.Resources.declare(class MyResourceType extends SCIMMY.Types.Resource {
             <h2 class="page-title"><span class="ancestors"></span>SCIMMY - SCIM m(ade eas)y</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><a href="#installation-and-usage">Installation and Usage</a></li><li><a href="#api">API</a></li></ul></nav>
+                <nav class="content-toc"><ul><li><a href="#installation-and-usage">Installation and Usage</a><ul><li><a href="#questions">Questions</a></li></ul></li><li><a href="#api">API</a></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><a href="#installation-and-usage">Installation and Usage</a></li><li><a href="#api">API</a></li></ul>
+                <ul><li><a href="#installation-and-usage">Installation and Usage</a><ul><li><a href="#questions">Questions</a></li></ul></li><li><a href="#api">API</a></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-22T14:35:36.775Z
+             - 2021-10-25T14:02:19.916Z
         </footer>
     </main>
     <script>prettyPrint();</script>

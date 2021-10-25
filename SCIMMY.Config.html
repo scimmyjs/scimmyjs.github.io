@@ -14,19 +14,19 @@
 
 <body>
     <header class="page-header">
-        
-            <h1 class="package-details">
-                <a class="package-name" href="./">
-                    <img alt="SCIMMY" src="static/assets/logo.png" />
-                    
-                </a>
+        <h1 class="package-details">
+            <a class="package-name" href="./">
+                <img alt="SCIMMY" src="static/assets/logo.png" />
+                
+            </a>
+            
                 <span class="package-version type-signature">0.9.9</span>
-            </h1>
-        
+            
+        </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
         <div class="page-links">
             
-                <a href="https://github.com/sleelin/scimmy" title="View Source on GitHub">
+                <a href="https://github.com/scimmyjs/scimmy" title="View Source on GitHub">
                     <img alt="View Source on GitHub" src="static/assets/github.png" />
                 </a>
             
@@ -62,10 +62,12 @@ It is used for defining SCIM specification features supported (e.g. PATCH, sort,
 This can be either directly by an implementing service provider, or retrieved by a client (identity provider) from a remote service provider.<br>
 By default, all specification features are marked as disabled, as your implementation may not support them.</p>
 <h2 id="retrieving-configuration">Retrieving Configuration</h2>
-<p>The stored configuration can be retrieved by calling <code><a href="SCIMMY.Config.html#.get">SCIMMY.Config.get</a>()</code>, which returns a cloned object representing the configuration <em>at the time of retrieval</em>.</p>
+<p>The stored configuration can be retrieved by calling <code><a href="SCIMMY.Config.html#.get">SCIMMY.Config.get</a>()</code>, which returns a cloned object
+representing the configuration <em>at the time of retrieval</em>.</p>
 <blockquote>
 <p><strong>Note:</strong><br>
-To prevent accidental configuration changes, the returned object has been trapped, and attempting to change a configuration value directly on this object will throw a TypeError with the message <code>&quot;SCIM Configuration can only be changed via the 'set' method&quot;</code></p>
+To prevent accidental configuration changes, the returned object has been trapped, and attempting to change a configuration
+value directly on this object will throw a TypeError with the message <code>&quot;SCIM Configuration can only be changed via the 'set' method&quot;</code></p>
 </blockquote>
 <p>The structure of the object reflects the example provided in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-8.5">RFC7643§8.5</a>:</p>
 <pre class="prettyprint source lang-json"><code>{
@@ -169,7 +171,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/config.js#L7">src/lib/config.js, line 7</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/config.js#L7">src/lib/config.js, line 7</a></dd>
         
     </div>
 
@@ -231,7 +233,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/config.js#L124">src/lib/config.js, line 124</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/config.js#L123">src/lib/config.js, line 123</a></dd>
         
     </div>
 
@@ -304,7 +306,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/config.js#L138">src/lib/config.js, line 138</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/config.js#L137">src/lib/config.js, line 137</a></dd>
         
     </div>
 
@@ -470,20 +472,20 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
             <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5></li><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5></li><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-22T14:35:36.799Z
+             - 2021-10-25T14:02:19.940Z
         </footer>
     </main>
     <script>prettyPrint();</script>

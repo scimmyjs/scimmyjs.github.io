@@ -14,19 +14,19 @@
 
 <body>
     <header class="page-header">
-        
-            <h1 class="package-details">
-                <a class="package-name" href="./">
-                    <img alt="SCIMMY" src="static/assets/logo.png" />
-                    
-                </a>
+        <h1 class="package-details">
+            <a class="package-name" href="./">
+                <img alt="SCIMMY" src="static/assets/logo.png" />
+                
+            </a>
+            
                 <span class="package-version type-signature">0.9.9</span>
-            </h1>
-        
+            
+        </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
         <div class="page-links">
             
-                <a href="https://github.com/sleelin/scimmy" title="View Source on GitHub">
+                <a href="https://github.com/scimmyjs/scimmy" title="View Source on GitHub">
                     <img alt="View Source on GitHub" src="static/assets/github.png" />
                 </a>
             
@@ -57,7 +57,62 @@
     </header>
     <section id="usage" class="class-usage container-overview">
         
-        <div class="description"><p>SCIM Schemas Container Class</p></div>
+        <div class="description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Schemas</code>, that is used to declare schema definitions implemented by a SCIM Service Provider.
+It also provides access to supplied implementations of core resource type schema definitions.
+It is also used to retrieve a service provider's declared schema definitions to be sent via the Schemas HTTP endpoint.</p>
+<blockquote>
+<p><strong>Note:</strong><br>
+The <code>SCIMMY.Schemas</code> class is a singleton, which means that declared schema definitions
+will remain the same, regardless of where the class is accessed from within your code.</p>
+</blockquote>
+<h2 id="declaring-definitions">Declaring Definitions</h2>
+<p>Schema definitions are typically declared automatically at the same time as resource type instances are declared in <code><a href="SCIMMY.Resources.html">SCIMMY.Resources</a></code>.
+If necessary, schema definitions can be declared manually with the <code><a href="SCIMMY.Schemas.html#.declare">SCIMMY.Schemas.declare</a></code> method.
+Nested definitions that extend declared schema definitions are also automatically declared to the <code>SCIMMY.Schemas</code> class.</p>
+<pre class="prettyprint source"><code>// Manually declare the EnterpriseUser schema definition
+SCIMMY.Schemas.declare(SCIMMY.Schemas.EnterpriseUser.definition);
+</code></pre>
+<p>Once declared, schema definitions are made available to the <code><a href="SCIMMY.Resources.Schema.html">SCIMMY.Resources.Schema</a></code>
+resource type, which handles formatting them for transmission/consumption according to the Schema Definition schema
+set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-7">RFC7643§7</a>.</p>
+<p>Each schema definition must be declared with a unique name, and each name can only be declared once.
+Attempting to declare a new schema definition with a name that has already been declared will throw a TypeError with the
+message <code>&quot;Schema definition '&lt;name&gt;' already declared&quot;</code>, where <code>&lt;name&gt;</code> is the name of the schema definition.</p>
+<pre class="prettyprint source"><code>// Declaring a schema definition under a different name
+let definition = new SCIMMY.Types.SchemaDefinition(&quot;User&quot;, &quot;urn:ietf:params:scim:schemas:MyOrg:CustomUser&quot;, &quot;MyOrg Custom User&quot;);
+SCIMMY.Schemas.declare(definition, &quot;CustomUser&quot;);
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong><br>
+While it is technically possible to declare the same schema definition under multiple names, this is
+inadvisable, as having more than one name for a schema definition would be thoroughly confusing for consuming
+SCIM clients and service providers.</p>
+</blockquote>
+<h2 id="modifying-definitions">Modifying Definitions</h2>
+<p>Not all SCIM clients and service providers support every attribute defined in the SCIM core schemas,
+and conversely, some custom attributes may not be defined in the core schemas. In such situations,
+it is possible to modify schema definitions using their <code><a href="SCIMMY.Types.SchemaDefinition.html#extend">extend</a></code>
+and <code><a href="SCIMMY.Types.SchemaDefinition.html#truncate">truncate</a></code> instance methods.</p>
+<blockquote>
+<p><strong>Note:</strong><br>
+Like the <code>SCIMMY.Schemas</code> class, the schema implementations included in this class are all singletons,
+and any changes to their schema definitions will persist across any location they are accessed.</p>
+</blockquote>
+<pre class="prettyprint source"><code>// Remove unsupported &quot;name&quot; sub-attributes from the User schema definition
+SCIMMY.Schemas.User.definition.truncate([&quot;name.middleName&quot;, &quot;name.honorificPrefix&quot;, &quot;name.honorificSuffix&quot;]);
+
+// Remove unsupported &quot;ims&quot; attribute and its sub-attributes from the User schema
+SCIMMY.Schemas.User.definition.truncate([&quot;ims&quot;]);
+
+// Add custom &quot;mail&quot; attribute to the Group schema definition
+SCIMMY.Schemas.Group.definition.extend([new SCIMMY.Types.Attribute(&quot;string&quot;, &quot;mail&quot;, {required: true})]);
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong><br>
+Extension schemas should be added via a resource type implementation's <code>extend</code> method (see <code><a href="SCIMMY.Resources.html">SCIMMY.Resources</a></code> for more details).
+Extensions added via a schema definition's <code>extend</code> method will <strong>not</strong> be included in the <code>schemaExtensions</code>
+property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resources.ResourceType</a></code> resource type.</p>
+</blockquote></div>
         
     </section>
     
@@ -87,7 +142,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
         
     </div>
 
@@ -115,12 +170,25 @@
                             <code><a href="SCIMMY.Schemas.EnterpriseUser.html">SCIMMY.Schemas.EnterpriseUser</a></code>
                         </div>
                         
+                            
+                                <ul>
+<li>Ensures an EnterpriseUser instance conforms to the EnterpriseUser schema extension set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.3">RFC7643§4.3</a>.</li>
+<li>Can be used directly, but is typically used to extend the <code>SCIMMY.Schemas.User</code> schema definition.</li>
+</ul>
+                            
+                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.Group.html">SCIMMY.Schemas.Group</a></code>
                         </div>
+                        
+                            
+                                <ul>
+<li>Ensures a Group instance conforms to the Group schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.2">RFC7643§4.2</a>.</li>
+</ul>
+                            
                         
                     </li>
                 
@@ -129,6 +197,12 @@
                             <code><a href="SCIMMY.Schemas.ResourceType.html">SCIMMY.Schemas.ResourceType</a></code>
                         </div>
                         
+                            
+                                <ul>
+<li>Ensures a ResourceType instance conforms to the ResourceType schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-6">RFC7643§6</a>.</li>
+</ul>
+                            
+                        
                     </li>
                 
                     <li>
@@ -136,12 +210,24 @@
                             <code><a href="SCIMMY.Schemas.ServiceProviderConfig.html">SCIMMY.Schemas.ServiceProviderConfig</a></code>
                         </div>
                         
+                            
+                                <ul>
+<li>Ensures a ServiceProviderConfig instance conforms to the Service Provider Configuration schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-5">RFC7643§5</a>.</li>
+</ul>
+                            
+                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.User.html">SCIMMY.Schemas.User</a></code>
                         </div>
+                        
+                            
+                                <ul>
+<li>Ensures a User instance conforms to the User schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.1">RFC7643§4.1</a>.</li>
+</ul>
+                            
                         
                     </li>
                 
@@ -193,7 +279,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/schemas.js#L29">src/lib/schemas.js, line 29</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L91">src/lib/schemas.js, line 91</a></dd>
         
     </div>
 
@@ -330,7 +416,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/schemas.js#L56">src/lib/schemas.js, line 56</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L118">src/lib/schemas.js, line 118</a></dd>
         
     </div>
 
@@ -396,12 +482,9 @@
             
                 
                     <div class="param-desc"><ul>
-<li>{Object} containing object with declared schema definitions for exposure via Schemas HTTP endpoint
-<ul>
-<li>{SCIMMY.Types.SchemaDefinition} the registered schema definition with matching name or ID</li>
-<li>{Boolean} the registration status of the specified schema implementation</li>
-</ul>
-</li>
+<li>Object containing declared schema definitions for exposure via Schemas HTTP endpoint, if no arguments are supplied.</li>
+<li>The registered schema definition with matching name or ID, or undefined, if a string argument is supplied.</li>
+<li>The registration status of the specified schema definition, if a class extending <code>SCIMMY.Types.SchemaDefinition</code> was supplied.</li>
 </ul></div>
                     
     
@@ -440,20 +523,20 @@
             <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-22T14:35:36.924Z
+             - 2021-10-25T14:02:20.068Z
         </footer>
     </main>
     <script>prettyPrint();</script>

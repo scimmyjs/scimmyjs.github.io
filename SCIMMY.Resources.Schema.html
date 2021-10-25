@@ -14,19 +14,19 @@
 
 <body>
     <header class="page-header">
-        
-            <h1 class="package-details">
-                <a class="package-name" href="./">
-                    <img alt="SCIMMY" src="static/assets/logo.png" />
-                    
-                </a>
+        <h1 class="package-details">
+            <a class="package-name" href="./">
+                <img alt="SCIMMY" src="static/assets/logo.png" />
+                
+            </a>
+            
                 <span class="package-version type-signature">0.9.9</span>
-            </h1>
-        
+            
+        </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>Schema</h2>
         <div class="page-links">
             
-                <a href="https://github.com/sleelin/scimmy" title="View Source on GitHub">
+                <a href="https://github.com/scimmyjs/scimmy" title="View Source on GitHub">
                     <img alt="View Source on GitHub" src="static/assets/github.png" />
                 </a>
             
@@ -53,7 +53,9 @@
     <header class="section-header">
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>Schema</h2>
         <div class="class-description"><p>SCIM Schema Resource</p></div>
-        
+        <div class="class-summary"><ul>
+<li>Formats SCIM schema definition implementations declared in <code><a href="SCIMMY.Schemas.html">SCIMMY.Schemas</a></code> for transmission/consumption according to the Schema Definition schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-7">RFC7643§7</a>.</li>
+</ul></div>
     </header>
     <section id="usage" class="class-usage container-overview">
         
@@ -104,7 +106,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/resources/schema.js#L9">src/lib/resources/schema.js, line 9</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/schema.js#L11">src/lib/resources/schema.js, line 11</a></dd>
         
     </div>
 
@@ -414,7 +416,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/resources/schema.js#L11">src/lib/resources/schema.js, line 11</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/schema.js#L13">src/lib/resources/schema.js, line 13</a></dd>
         
     </div>
 
@@ -442,7 +444,7 @@
             <div class="subsection-content">
                 <article id=".basepath">
     <header>
-        <h4 class="name"><span class="type-signature">(static) </span>basepath<span class="signature">(path)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a>}</span></h4>
+        <h4 class="name"><span class="type-signature">(static) </span>basepath<span class="signature">(path<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a>, String}</span></h4>
         
         <div class="description"><p>Sets or retrieves the base path for resolution of a resource's location</p></div>
     </header>
@@ -480,7 +482,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/resources/schema.js#L18">src/lib/resources/schema.js, line 18</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/schema.js#L20">src/lib/resources/schema.js, line 20</a></dd>
         
     </div>
 
@@ -514,7 +516,7 @@
             
                 <td class="name">
                     <code>
-                        path<span class="signature-attributes"></span>
+                        path<span class="signature-attributes">opt</span>
                     </code>
                 </td>
             
@@ -545,13 +547,13 @@
         
             
                 
-                    
+                    <div class="param-desc"><p>this resource type class for chaining if path is a string, or the resource's basepath</p></div>
                     
     
     <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></span>}</span></dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></span><span class="param-join">|</span><span class="param-type">String</span>}</span></dd>
         
     </div>
 
@@ -603,7 +605,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/resources/schema.js#L30">src/lib/resources/schema.js, line 30</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/schema.js#L32">src/lib/resources/schema.js, line 32</a></dd>
         
     </div>
 
@@ -650,7 +652,7 @@
             
 
             <td class="type">
-    <span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span><span class="param-join">|</span><span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>[]</span>
+    <span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span>
 </td>
 
             
@@ -755,7 +757,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/sleelin/scimmy/blob/9f68c543c842c36d921ae8492fd12c135da9550f/src/lib/resources/schema.js#L50">src/lib/resources/schema.js, line 50</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/schema.js#L52">src/lib/resources/schema.js, line 52</a></dd>
         
     </div>
 
@@ -828,7 +830,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-22T14:35:36.860Z
+             - 2021-10-25T14:02:19.996Z
         </footer>
     </main>
     <script>prettyPrint();</script>
