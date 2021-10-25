@@ -283,6 +283,20 @@ article article:before {
     left: 0;
 }
 
+article article article {
+    border: none;
+    border-left: 2px solid #ddd;
+    padding: 0 0 0 12px;
+}
+
+article article article:before {
+    display: none;
+}
+
+article article article pre {
+    margin: 0;
+}
+
 section:not(:last-child) {
     margin-bottom: 12px;
 }
@@ -573,6 +587,19 @@ tr > th:last-child {
 
 .details .object-value {
     padding-top: 0;
+}
+
+.returns dt {
+    float: left;
+    padding-right: 15px;
+}
+
+.returns dd {
+    margin-left: 0;
+}
+
+.returns .param-desc:first-letter {
+    text-transform: capitalize;
 }
 
 .description {
@@ -962,12 +989,7 @@ tr > th:last-child {
     }
     
     .returns dt {
-        float: left;
         padding-right: 5px;
-    }
-    
-    .returns dd {
-        margin-left: 0;
     }
     
     .returns .signature .param-type:not(:only-child) {
