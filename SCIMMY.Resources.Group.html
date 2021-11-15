@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCIMMY: Class - SCIMMY.Resources.Group</title>
     <script src="static/classy.js"></script>
-    <script src="static/prettify/prettify.js"></script>
-    <script src="static/prettify/lang-css.js"></script>
+    <script src="static/highlight/highlight.min.js"></script>
+    <script src="static/highlight/langs/javascript.min.js"></script>
+    <script src="static/highlight/langs/json.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/highlight/highlight.min.css">
     <link type="text/css" rel="stylesheet" href="static/classy.css">
-    <link type="text/css" rel="stylesheet" href="static/prettify/prettify.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.9.9</span>
+                <span class="package-version type-signature">0.10.0</span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>Group</h2>
@@ -65,9 +66,9 @@
         <div class="description"><p>Instantiate a new SCIM Group resource and parse any supplied parameters</p></div>
         
             <div class="class-signature">
-                <pre class="signature name">
+                <pre class="signature name no-highlight">
                     <code>
-                        new <span class="ancestors">SCIMMY.Resources.</span>Group<span class="signature">(config<span class="signature-attributes">opt</span>, &hellip;rest)</span><span class="type-signature returns"></span>
+                        new <span class="ancestors">SCIMMY.Resources.</span>Group<span class="signature">(id<span class="signature-attributes">opt</span>, config<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
                     </code>
                 </pre>
             </div>
@@ -107,7 +108,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L12">src/lib/resources/group.js, line 12</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L12">src/lib/resources/group.js, line 12</a></dd>
         
     </div>
 
@@ -349,13 +350,36 @@
             
                 <td class="name">
                     <code>
+                        id<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+                <td class="default"></td>
+            
+
+            <td class="description last">
+                <p>the ID of the requested resource</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
                         config<span class="signature-attributes">opt</span>
                     </code>
                 </td>
             
 
             <td class="type">
-    <span class="param-type">Object</span><span class="param-join">|</span><span class="param-type">String</span>
+    <span class="param-type">Object</span>
 </td>
 
             
@@ -363,7 +387,7 @@
             
 
             <td class="description last">
-                <p>the parameters of the resource instance if object, or the resource ID if string</p>
+                <p>the parameters of the resource instance request</p>
                 
                     <h6>Properties</h6>
                     
@@ -533,29 +557,6 @@
             </td>
         </tr>
     
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        &hellip;rest<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">any[]</span>
-</td>
-
-            
-                <td class="default"></td>
-            
-
-            <td class="description last">
-                <p>all other arguments supplied to the resource constructor</p>
-                
-            </td>
-        </tr>
-    
     </tbody>
 </table>
 
@@ -625,7 +626,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L14">src/lib/resources/group.js, line 14</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L14">src/lib/resources/group.js, line 14</a></dd>
         
     </div>
 
@@ -690,7 +691,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L30">src/lib/resources/group.js, line 30</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L30">src/lib/resources/group.js, line 30</a></dd>
         
     </div>
 
@@ -755,7 +756,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L37">src/lib/resources/group.js, line 37</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L37">src/lib/resources/group.js, line 37</a></dd>
         
     </div>
 
@@ -821,7 +822,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L21">src/lib/resources/group.js, line 21</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L21">src/lib/resources/group.js, line 21</a></dd>
         
     </div>
 
@@ -944,7 +945,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L44">src/lib/resources/group.js, line 44</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L44">src/lib/resources/group.js, line 44</a></dd>
         
     </div>
 
@@ -1067,7 +1068,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L52">src/lib/resources/group.js, line 52</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L52">src/lib/resources/group.js, line 52</a></dd>
         
     </div>
 
@@ -1190,7 +1191,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L60">src/lib/resources/group.js, line 60</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L60">src/lib/resources/group.js, line 60</a></dd>
         
     </div>
 
@@ -1314,7 +1315,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L83">src/lib/resources/group.js, line 83</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L83">src/lib/resources/group.js, line 83</a></dd>
         
     </div>
 
@@ -1411,7 +1412,7 @@ await (new SCIMMY.Resources.Group({filter: 'displayName -sw "A"'})).read();</cod
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L108">src/lib/resources/group.js, line 108</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L108">src/lib/resources/group.js, line 108</a></dd>
         
     </div>
 
@@ -1529,6 +1530,13 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         
         
         
+    <div class="detail tag-see">
+        <dt>See:</dt>
+        
+            <dd><a href="SCIMMY.Messages.PatchOp.html">SCIMMY.Messages.PatchOp</a></dd>
+        
+    </div>
+
         
         
 
@@ -1552,7 +1560,7 @@ Emits patched resources for consumption with resource's ingress method.</p></div
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L129">src/lib/resources/group.js, line 129</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L135">src/lib/resources/group.js, line 135</a></dd>
         
     </div>
 
@@ -1640,7 +1648,7 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         
             <article class="example">
                 
-                <pre class="example-code prettyprint"><code>// Add member to group with ID "1234" with a patch operation (see <a href="SCIMMY.Messages.PatchOp.html">SCIMMY.Messages.PatchOp</a>)
+                <pre class="example-code prettyprint"><code>// Add member to group with ID "1234" with a patch operation (see SCIMMY.Messages.PatchOp)
 await (new SCIMMY.Resources.Group("1234")).patch({Operations: [{op: "add", path: "members", value: {value: "5678"}}]});</code></pre>
             </article>
         
@@ -1686,7 +1694,7 @@ await (new SCIMMY.Resources.Group("1234")).patch({Operations: [{op: "add", path:
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/group.js#L147">src/lib/resources/group.js, line 147</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/group.js#L159">src/lib/resources/group.js, line 159</a></dd>
         
     </div>
 
@@ -1748,10 +1756,10 @@ await (new SCIMMY.Resources.Group("1234")).dispose();</code></pre>
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-25T14:20:40.236Z
+             - 2021-11-15T07:45:02.733Z
         </footer>
     </main>
-    <script>prettyPrint();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

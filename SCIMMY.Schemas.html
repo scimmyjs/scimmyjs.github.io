@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCIMMY: Namespace - SCIMMY.Schemas</title>
     <script src="static/classy.js"></script>
-    <script src="static/prettify/prettify.js"></script>
-    <script src="static/prettify/lang-css.js"></script>
+    <script src="static/highlight/highlight.min.js"></script>
+    <script src="static/highlight/langs/javascript.min.js"></script>
+    <script src="static/highlight/langs/json.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/highlight/highlight.min.css">
     <link type="text/css" rel="stylesheet" href="static/classy.css">
-    <link type="text/css" rel="stylesheet" href="static/prettify/prettify.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.9.9</span>
+                <span class="package-version type-signature">0.10.0</span>
             
         </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
@@ -77,17 +78,16 @@ resource type, which handles formatting them for transmission/consumption accord
 set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-7">RFC7643§7</a>.</p>
 <p>Each schema definition must be declared with a unique name, and each name can only be declared once.
 Attempting to declare a new schema definition with a name that has already been declared will throw a TypeError with the
-message <code>&quot;Schema definition '&lt;name&gt;' already declared&quot;</code>, where <code>&lt;name&gt;</code> is the name of the schema definition.</p>
+message <code>&quot;Schema definition '&lt;name&gt;' already declared with id '&lt;id&gt;'&quot;</code>, where <code>&lt;name&gt;</code> and <code>&lt;id&gt;</code> are the name and id,
+respectively, of the existing schema definition.</p>
+<p>Similarly, each schema definition can only be declared under one name.
+Attempting to declare an existing schema definition under a new name will throw a TypeError with the message
+<code>&quot;Schema definition '&lt;id&gt;' already declared with name '&lt;name&gt;'&quot;</code>, where <code>&lt;id&gt;</code> and <code>&lt;name&gt;</code> are the id and name,
+respectively, of the existing schema definition.</p>
 <pre class="prettyprint source"><code>// Declaring a schema definition under a different name
 let definition = new SCIMMY.Types.SchemaDefinition(&quot;User&quot;, &quot;urn:ietf:params:scim:schemas:MyOrg:CustomUser&quot;, &quot;MyOrg Custom User&quot;);
 SCIMMY.Schemas.declare(definition, &quot;CustomUser&quot;);
 </code></pre>
-<blockquote>
-<p><strong>Note:</strong><br>
-While it is technically possible to declare the same schema definition under multiple names, this is
-inadvisable, as having more than one name for a schema definition would be thoroughly confusing for consuming
-SCIM clients and service providers.</p>
-</blockquote>
 <h2 id="modifying-definitions">Modifying Definitions</h2>
 <p>Not all SCIM clients and service providers support every attribute defined in the SCIM core schemas,
 and conversely, some custom attributes may not be defined in the core schemas. In such situations,
@@ -142,7 +142,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
         
     </div>
 
@@ -248,7 +248,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             <div class="subsection-content">
                 <article id=".declare">
     <header>
-        <h4 class="name"><span class="type-signature">(static) </span>declare<span class="signature">(definition, config<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>, Schemas}</span></h4>
+        <h4 class="name"><span class="type-signature">(static) </span>declare<span class="signature">(definition, name<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Schemas.html">SCIMMY.Schemas</a>}</span></h4>
         
         <div class="description"><p>Register a SchemaDefinition implementation for exposure via Schemas HTTP endpoint</p></div>
     </header>
@@ -279,7 +279,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L91">src/lib/schemas.js, line 91</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L93">src/lib/schemas.js, line 93</a></dd>
         
     </div>
 
@@ -334,19 +334,19 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
                 <td class="name">
                     <code>
-                        config<span class="signature-attributes">opt</span>
+                        name<span class="signature-attributes">opt</span>
                     </code>
                 </td>
             
 
             <td class="type">
-    <span class="param-type">String</span><span class="param-join">|</span><span class="param-type">Object</span>
+    <span class="param-type">String</span>
 </td>
 
             
 
             <td class="description last">
-                <p>the configuration to feed to the schema being declared</p>
+                <p>the name of the definition being declared, if different from definition's name property</p>
                 
             </td>
         </tr>
@@ -365,13 +365,13 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
             
                 
-                    <div class="param-desc"><p>the Schemas class or declared schema class for chaining</p></div>
+                    <div class="param-desc"><p>the Schemas class for chaining</p></div>
                     
     
     <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span><span class="param-join">|</span><span class="param-type">Schemas</span>}</span></dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Schemas.html">SCIMMY.Schemas</a></span>}</span></dd>
         
     </div>
 
@@ -385,9 +385,9 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     
 </article><article id=".declared">
     <header>
-        <h4 class="name"><span class="type-signature">(static) </span>declared<span class="signature">(definition<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {Object, <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>, Boolean}</span></h4>
+        <h4 class="name"><span class="type-signature">(static) </span>declared<span class="signature">(definition<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>[], <a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>, Boolean}</span></h4>
         
-        <div class="description"><p>Get registration status of specific schema implementation, or get all registered schema definitions</p></div>
+        <div class="description"><p>Get registration status of specific schema definition, or get all registered schema definitions</p></div>
     </header>
     
     <section  class="details">
@@ -416,7 +416,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/schemas.js#L118">src/lib/schemas.js, line 118</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L125">src/lib/schemas.js, line 125</a></dd>
         
     </div>
 
@@ -462,7 +462,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
 
             <td class="description last">
-                <p>the schema implementation or name to query registration status for</p>
+                <p>the schema definition or name to query registration status for</p>
                 
             </td>
         </tr>
@@ -482,7 +482,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
                 
                     <div class="param-desc"><ul>
-<li>Object containing declared schema definitions for exposure via Schemas HTTP endpoint, if no arguments are supplied.</li>
+<li>Array containing declared schema definitions for exposure via Schemas HTTP endpoint, if no arguments are supplied.</li>
 <li>The registered schema definition with matching name or ID, or undefined, if a string argument is supplied.</li>
 <li>The registration status of the specified schema definition, if a class extending <code>SCIMMY.Types.SchemaDefinition</code> was supplied.</li>
 </ul></div>
@@ -491,7 +491,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     <div class="detail tag-type">
         <dt>Type:</dt>
         
-            <dd><span class="signature type-signature">{<span class="param-type">Object</span><span class="param-join">|</span><span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span><span class="param-join">|</span><span class="param-type">Boolean</span>}</span></dd>
+            <dd><span class="signature type-signature">{<span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>[]</span><span class="param-join">|</span><span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span><span class="param-join">|</span><span class="param-type">Boolean</span>}</span></dd>
         
     </div>
 
@@ -536,10 +536,10 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-25T14:20:40.327Z
+             - 2021-11-15T07:45:02.818Z
         </footer>
     </main>
-    <script>prettyPrint();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

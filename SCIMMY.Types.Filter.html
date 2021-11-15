@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCIMMY: Class - SCIMMY.Types.Filter</title>
     <script src="static/classy.js"></script>
-    <script src="static/prettify/prettify.js"></script>
-    <script src="static/prettify/lang-css.js"></script>
+    <script src="static/highlight/highlight.min.js"></script>
+    <script src="static/highlight/langs/javascript.min.js"></script>
+    <script src="static/highlight/langs/json.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/highlight/highlight.min.css">
     <link type="text/css" rel="stylesheet" href="static/classy.css">
-    <link type="text/css" rel="stylesheet" href="static/prettify/prettify.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.9.9</span>
+                <span class="package-version type-signature">0.10.0</span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
@@ -64,9 +65,9 @@
         <div class="description"><p>Instantiate and parse a new SCIM filter string or expression</p></div>
         
             <div class="class-signature">
-                <pre class="signature name">
+                <pre class="signature name no-highlight">
                     <code>
-                        new <span class="ancestors">SCIMMY.Types.</span>Filter<span class="signature">(query<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
+                        new <span class="ancestors">SCIMMY.Types.</span>Filter<span class="signature">(expression<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
                     </code>
                 </pre>
             </div>
@@ -99,7 +100,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/filter.js#L16">src/lib/types/filter.js, line 16</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L34">src/lib/types/filter.js, line 34</a></dd>
         
     </div>
 
@@ -110,6 +111,49 @@
         
         
         
+    <div class="detail props">
+        <dt>Properties:</dt>
+        
+            <dd>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        expression<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+
+            <td class="description last">
+                <p>the raw string that was parsed by the filter</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+</dd>
+        
+    </div>
+
     </dl>
 </section>
     
@@ -133,7 +177,7 @@
             
                 <td class="name">
                     <code>
-                        query<span class="signature-attributes">opt</span>
+                        expression<span class="signature-attributes">opt</span>
                     </code>
                 </td>
             
@@ -204,7 +248,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/filter.js#L32">src/lib/types/filter.js, line 32</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L71">src/lib/types/filter.js, line 71</a></dd>
         
     </div>
 
@@ -298,6 +342,149 @@
     
 
     
+    <section id="constants" class="child-constants">
+        <h3 class="subsection-title">Constants</h3>
+        
+            <div class="subsection-content">
+                <article id="~ValidLogicStrings">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidLogicStrings<span class="type-signature">: String[]</span></h4>
+        
+        <div class="description"><p>Collection of valid logical operator strings in a filter expression</p></div>
+    </header>
+    
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>["and","or","not"]</code></pre></dd>
+        
+    </div>
+
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">String[]</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L13">src/lib/types/filter.js, line 13</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+        
+    </dl>
+</section>
+    
+    
+    
+    
+    
+</article><article id="~ValidComparisonStrings">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidComparisonStrings<span class="type-signature">: String[]</span></h4>
+        
+        <div class="description"><p>Collection of valid comparison operator strings in a filter expression</p></div>
+    </header>
+    
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>["eq","ne","co","sw","ew","gt","lt","ge","le","pr","np"]</code></pre></dd>
+        
+    </div>
+
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">String[]</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L24">src/lib/types/filter.js, line 24</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+        
+    </dl>
+</section>
+    
+    
+    
+    
+    
+</article>
+            </div>
+        
+    </section>
+
 </article>
 
 <aside class="content-aside">
@@ -307,23 +494,23 @@
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-25T14:20:40.359Z
+             - 2021-11-15T07:45:02.849Z
         </footer>
     </main>
-    <script>prettyPrint();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

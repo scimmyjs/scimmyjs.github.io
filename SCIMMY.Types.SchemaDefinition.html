@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCIMMY: Class - SCIMMY.Types.SchemaDefinition</title>
     <script src="static/classy.js"></script>
-    <script src="static/prettify/prettify.js"></script>
-    <script src="static/prettify/lang-css.js"></script>
+    <script src="static/highlight/highlight.min.js"></script>
+    <script src="static/highlight/langs/javascript.min.js"></script>
+    <script src="static/highlight/langs/json.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/highlight/highlight.min.css">
     <link type="text/css" rel="stylesheet" href="static/classy.css">
-    <link type="text/css" rel="stylesheet" href="static/prettify/prettify.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.9.9</span>
+                <span class="package-version type-signature">0.10.0</span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>SchemaDefinition</h2>
@@ -65,7 +66,7 @@
         <div class="description"><p>Constructs an instance of a full SCIM schema definition</p></div>
         
             <div class="class-signature">
-                <pre class="signature name">
+                <pre class="signature name no-highlight">
                     <code>
                         new <span class="ancestors">SCIMMY.Types.</span>SchemaDefinition<span class="signature">(name, id, description<span class="signature-attributes">opt</span>, attributes<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
                     </code>
@@ -100,7 +101,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L11">src/lib/types/definition.js, line 11</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L11">src/lib/types/definition.js, line 11</a></dd>
         
     </div>
 
@@ -382,7 +383,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L51">src/lib/types/definition.js, line 51</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L64">src/lib/types/definition.js, line 64</a></dd>
         
     </div>
 
@@ -500,7 +501,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L65">src/lib/types/definition.js, line 65</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L78">src/lib/types/definition.js, line 78</a></dd>
         
     </div>
 
@@ -585,7 +586,7 @@
     
 </article><article id="extend">
     <header>
-        <h4 class="name">extend<span class="signature">(extensions, required<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
+        <h4 class="name">extend<span class="signature">(extension, required<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"> &rarr; {<a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a>}</span></h4>
         
         <div class="description"><p>Extend a schema definition instance by mixing in other schemas or attributes</p></div>
     </header>
@@ -616,7 +617,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L115">src/lib/types/definition.js, line 115</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L132">src/lib/types/definition.js, line 132</a></dd>
         
     </div>
 
@@ -650,13 +651,13 @@
             
                 <td class="name">
                     <code>
-                        extensions<span class="signature-attributes"></span>
+                        extension<span class="signature-attributes"></span>
                     </code>
                 </td>
             
 
             <td class="type">
-    <span class="param-type">(<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>|<a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>)[]</span>
+    <span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span><span class="param-join">|</span><span class="param-type"><a href="SCIMMY.Types.Attribute.html">SCIMMY.Types.Attribute</a>[]</span>
 </td>
 
             
@@ -664,7 +665,7 @@
             
 
             <td class="description last">
-                <p>the schema extensions or collection of attributes to register</p>
+                <p>the schema extension or collection of attributes to register</p>
                 
             </td>
         </tr>
@@ -757,7 +758,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L147">src/lib/types/definition.js, line 147</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L182">src/lib/types/definition.js, line 182</a></dd>
         
     </div>
 
@@ -873,7 +874,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/types/definition.js#L175">src/lib/types/definition.js, line 175</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/definition.js#L210">src/lib/types/definition.js, line 210</a></dd>
         
     </div>
 
@@ -1060,10 +1061,10 @@
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-25T14:20:40.349Z
+             - 2021-11-15T07:45:02.838Z
         </footer>
     </main>
-    <script>prettyPrint();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>

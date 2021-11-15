@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SCIMMY: Class - SCIMMY.Resources.ResourceType</title>
     <script src="static/classy.js"></script>
-    <script src="static/prettify/prettify.js"></script>
-    <script src="static/prettify/lang-css.js"></script>
+    <script src="static/highlight/highlight.min.js"></script>
+    <script src="static/highlight/langs/javascript.min.js"></script>
+    <script src="static/highlight/langs/json.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/highlight/highlight.min.css">
     <link type="text/css" rel="stylesheet" href="static/classy.css">
-    <link type="text/css" rel="stylesheet" href="static/prettify/prettify.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.9.9</span>
+                <span class="package-version type-signature">0.10.0</span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>ResourceType</h2>
@@ -64,9 +65,9 @@
         <div class="description"><p>Instantiate a new SCIM ResourceType resource and parse any supplied parameters</p></div>
         
             <div class="class-signature">
-                <pre class="signature name">
+                <pre class="signature name no-highlight">
                     <code>
-                        new <span class="ancestors">SCIMMY.Resources.</span>ResourceType<span class="signature">(config<span class="signature-attributes">opt</span>, &hellip;rest)</span><span class="type-signature returns"></span>
+                        new <span class="ancestors">SCIMMY.Resources.</span>ResourceType<span class="signature">(id<span class="signature-attributes">opt</span>, config<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
                     </code>
                 </pre>
             </div>
@@ -106,7 +107,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/resourcetype.js#L12">src/lib/resources/resourcetype.js, line 12</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/resourcetype.js#L12">src/lib/resources/resourcetype.js, line 12</a></dd>
         
     </div>
 
@@ -348,13 +349,36 @@
             
                 <td class="name">
                     <code>
+                        id<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+    <span class="param-type">String</span>
+</td>
+
+            
+                <td class="default"></td>
+            
+
+            <td class="description last">
+                <p>the ID of the requested resource</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
                         config<span class="signature-attributes">opt</span>
                     </code>
                 </td>
             
 
             <td class="type">
-    <span class="param-type">Object</span><span class="param-join">|</span><span class="param-type">String</span>
+    <span class="param-type">Object</span>
 </td>
 
             
@@ -362,7 +386,7 @@
             
 
             <td class="description last">
-                <p>the parameters of the resource instance if object, or the resource ID if string</p>
+                <p>the parameters of the resource instance request</p>
                 
                     <h6>Properties</h6>
                     
@@ -532,29 +556,6 @@
             </td>
         </tr>
     
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        &hellip;rest<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">any[]</span>
-</td>
-
-            
-                <td class="default"></td>
-            
-
-            <td class="description last">
-                <p>all other arguments supplied to the resource constructor</p>
-                
-            </td>
-        </tr>
-    
     </tbody>
 </table>
 
@@ -624,7 +625,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/resourcetype.js#L14">src/lib/resources/resourcetype.js, line 14</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/resourcetype.js#L14">src/lib/resources/resourcetype.js, line 14</a></dd>
         
     </div>
 
@@ -690,7 +691,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/resourcetype.js#L21">src/lib/resources/resourcetype.js, line 21</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/resourcetype.js#L21">src/lib/resources/resourcetype.js, line 21</a></dd>
         
     </div>
 
@@ -813,7 +814,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/resourcetype.js#L33">src/lib/resources/resourcetype.js, line 33</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/resourcetype.js#L33">src/lib/resources/resourcetype.js, line 33</a></dd>
         
     </div>
 
@@ -965,7 +966,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/00d6c1c67857a824bfece626d41cbb361744d01d/src/lib/resources/resourcetype.js#L53">src/lib/resources/resourcetype.js, line 53</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/resourcetype.js#L53">src/lib/resources/resourcetype.js, line 53</a></dd>
         
     </div>
 
@@ -1038,10 +1039,10 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
 </aside>
         <footer>
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-10-25T14:20:40.243Z
+             - 2021-11-15T07:45:02.740Z
         </footer>
     </main>
-    <script>prettyPrint();</script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
