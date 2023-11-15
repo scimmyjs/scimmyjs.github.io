@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
@@ -43,21 +45,23 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li class="active"><h4 class="active"><a href="SCIMMY.Schemas.html" class="active">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li class="active"><h4 class="active"><a href="SCIMMY.Schemas.html" class="active">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
-        
-        
+        <h2 class="page-title subsection-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
+        <h2 class="class-title hidden">Namespace - SCIMMY.Schemas</h2>
     </header>
-    <section id="usage" class="class-usage container-overview">
-        
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+        </header>
         <div class="description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Schemas</code>, that is used to declare schema definitions implemented by a SCIM Service Provider.
 It also provides access to supplied implementations of core resource type schema definitions.
 It is also used to retrieve a service provider's declared schema definitions to be sent via the Schemas HTTP endpoint.</p>
@@ -106,17 +110,18 @@ SCIMMY.Schemas.User.definition.truncate([&quot;ims&quot;]);
 
 // Add custom &quot;mail&quot; attribute to the Group schema definition
 SCIMMY.Schemas.Group.definition.extend([new SCIMMY.Types.Attribute(&quot;string&quot;, &quot;mail&quot;, {required: true})]);
-</code></pre>
-<blockquote>
-<p><strong>Note:</strong><br>
-Extension schemas should be added via a resource type implementation's <code>extend</code> method (see <code><a href="SCIMMY.Resources.html">SCIMMY.Resources</a></code> for more details).
-Extensions added via a schema definition's <code>extend</code> method will <strong>not</strong> be included in the <code>schemaExtensions</code>
-property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resources.ResourceType</a></code> resource type.</p>
-</blockquote></div>
-        
+
+// Extend the User schema definition with the EnterpriseUser schema definition, and make it required
+SCIMMY.Schemas.User.definition.extend(SCIMMY.Schemas.EnterpriseUser.definition, true);
+
+// Remove the EnterpriseUser extension schema definition from the User schema definition
+SCIMMY.Schemas.User.definition.truncate(SCIMMY.Schemas.EnterpriseUser.definition);
+</code></pre></div>
     </section>
-    
-    <section id="details" class="details">
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
+        
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -128,6 +133,14 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
+
+        
+    <div class="detail tag-kind">
+        <dt>Kind:</dt>
+        
+            <dd><span class="signature type-signature">singleton</span></dd>
+        
+    </div>
 
         
         
@@ -142,7 +155,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/schemas.js#L8">src/lib/schemas.js, line 8</a></dd>
         
     </div>
 
@@ -152,12 +165,13 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
-        
     </dl>
 </section>
-    
-    
-    
+
+
+        
+        
+    </section>
     
     
     <section id="classes" class="child-classes">
@@ -169,73 +183,52 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.EnterpriseUser.html">SCIMMY.Schemas.EnterpriseUser</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Ensures an EnterpriseUser instance conforms to the EnterpriseUser schema extension set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.3">RFC7643§4.3</a>.</li>
 <li>Can be used directly, but is typically used to extend the <code>SCIMMY.Schemas.User</code> schema definition.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.Group.html">SCIMMY.Schemas.Group</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Ensures a Group instance conforms to the Group schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.2">RFC7643§4.2</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.ResourceType.html">SCIMMY.Schemas.ResourceType</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Ensures a ResourceType instance conforms to the ResourceType schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-6">RFC7643§6</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.ServiceProviderConfig.html">SCIMMY.Schemas.ServiceProviderConfig</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Ensures a ServiceProviderConfig instance conforms to the Service Provider Configuration schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-5">RFC7643§5</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Schemas.User.html">SCIMMY.Schemas.User</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Ensures a User instance conforms to the User schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-4.1">RFC7643§4.1</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
             </ul>
         
     </section>
 
-    
     
     
     
@@ -252,7 +245,6 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         <div class="description"><p>Register a SchemaDefinition implementation for exposure via Schemas HTTP endpoint</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -276,10 +268,11 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L93">src/lib/schemas.js, line 93</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/schemas.js#L94">src/lib/schemas.js, line 94</a></dd>
         
     </div>
 
@@ -289,10 +282,9 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -319,8 +311,12 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -340,8 +336,12 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -357,8 +357,10 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -381,6 +383,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
     </section>
 
+        
     
     
 </article><article id=".declared">
@@ -389,7 +392,6 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         <div class="description"><p>Get registration status of specific schema definition, or get all registered schema definitions</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -413,10 +415,11 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/schemas.js#L125">src/lib/schemas.js, line 125</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/schemas.js#L126">src/lib/schemas.js, line 126</a></dd>
         
     </div>
 
@@ -426,10 +429,9 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -456,8 +458,12 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.SchemaDefinition.html">SCIMMY.Types.SchemaDefinition</a></span><span class="param-join">|</span><span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -473,8 +479,10 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -501,6 +509,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
         
     </section>
 
+        
     
     
 </article>
@@ -511,11 +520,7 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
     
     
     
-    
-
-    
 </article>
-
 <aside class="content-aside">
     
     
@@ -523,20 +528,23 @@ property by the <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resour
             <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Schemas</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#declaring-definitions">Declaring Definitions</a></li><li><a href="#modifying-definitions">Modifying Definitions</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.818Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:11:00.145Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>

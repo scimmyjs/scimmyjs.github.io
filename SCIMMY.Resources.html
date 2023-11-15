@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Resources</h2>
@@ -43,21 +45,23 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li class="active"><h4 class="active"><a href="SCIMMY.Resources.html" class="active">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li class="active"><h4 class="active"><a href="SCIMMY.Resources.html" class="active">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Resources</h2>
-        
-        
+        <h2 class="page-title subsection-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Resources</h2>
+        <h2 class="class-title hidden">Namespace - SCIMMY.Resources</h2>
     </header>
-    <section id="usage" class="class-usage container-overview">
-        
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+        </header>
         <div class="description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Resources</code>, that is used to declare resource types implemented by a SCIM Service Provider.
 It also provides access to supplied implementations of core resource types that can be used to easily support well-known resource types.<br>
 It is also used to retrieve a service provider's declared resource types to be sent via the ResourceTypes HTTP endpoint.</p>
@@ -131,10 +135,11 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
 </code></pre>
 </li>
 </ul></div>
-        
     </section>
-    
-    <section id="details" class="details">
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
+        
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -146,6 +151,14 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
+
+        
+    <div class="detail tag-kind">
+        <dt>Kind:</dt>
+        
+            <dd><span class="signature type-signature">singleton</span></dd>
+        
+    </div>
 
         
         
@@ -160,7 +173,7 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources.js#L9">src/lib/resources.js, line 9</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources.js#L9">src/lib/resources.js, line 9</a></dd>
         
     </div>
 
@@ -170,14 +183,14 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
-        
     </dl>
 </section>
-    
-    
-    
+
+
+        
+        
     <section id="examples" class="tag-examples">
-        <h5 class="subsection-title">Examples</h5>
+        <h5 class="subsection-title">Examples:</h5>
         
             <article class="example">
                 <div class="example-caption">Basic usage with provided resource type implementations</div>
@@ -199,6 +212,7 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
     </section>
 
+    </section>
     
     
     <section id="classes" class="child-classes">
@@ -210,74 +224,53 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
                         <div class="name">
                             <code><a href="SCIMMY.Resources.Group.html">SCIMMY.Resources.Group</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Handles read/write/patch/dispose operations for SCIM Group resources with specified ingress/egress/degress methods.</li>
 <li>Formats SCIM Group resources for transmission/consumption using the <code><a href="SCIMMY.Schemas.Group.html">SCIMMY.Schemas.Group</a></code> schema class.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Resources.ResourceType.html">SCIMMY.Resources.ResourceType</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Formats SCIM Resource Type implementations declared in <code><a href="SCIMMY.Resources.html">SCIMMY.Resources</a></code> for transmission/consumption according to the ResourceType schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-6">RFC7643§6</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Resources.Schema.html">SCIMMY.Resources.Schema</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Formats SCIM schema definition implementations declared in <code><a href="SCIMMY.Schemas.html">SCIMMY.Schemas</a></code> for transmission/consumption according to the Schema Definition schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-7">RFC7643§7</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Resources.ServiceProviderConfig.html">SCIMMY.Resources.ServiceProviderConfig</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Formats SCIM Service Provider Configuration set in <code><a href="SCIMMY.Config.html">SCIMMY.Config</a></code> for transmission/consumption according to the Service Provider Configuration schema set out in <a href="https://datatracker.ietf.org/doc/html/rfc7643#section-5">RFC7643§5</a>.</li>
 </ul>
-                            
-                        
                     </li>
                 
                     <li>
                         <div class="name">
                             <code><a href="SCIMMY.Resources.User.html">SCIMMY.Resources.User</a></code>
                         </div>
-                        
-                            
-                                <ul>
+                        <ul>
 <li>Handles read/write/patch/dispose operations for SCIM User resources with specified ingress/egress/degress methods.</li>
 <li>Formats SCIM User resources for transmission/consumption using the <code><a href="SCIMMY.Schemas.User.html">SCIMMY.Schemas.User</a></code> schema class.</li>
 </ul>
-                            
-                        
                     </li>
                 
             </ul>
         
     </section>
 
-    
     
     
     
@@ -294,7 +287,6 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         <div class="description"><p>Register a resource implementation for exposure as a ResourceType</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -318,10 +310,11 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources.js#L136">src/lib/resources.js, line 136</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources.js#L136">src/lib/resources.js, line 136</a></dd>
         
     </div>
 
@@ -331,10 +324,9 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -361,8 +353,12 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -382,8 +378,12 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span><span class="param-join">|</span><span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -399,8 +399,10 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -423,6 +425,7 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
     </section>
 
+        
     
     
 </article><article id=".declared">
@@ -431,7 +434,6 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         <div class="description"><p>Get registration status of specific resource implementation, or get all registered resource implementations</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -455,10 +457,11 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources.js#L198">src/lib/resources.js, line 198</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources.js#L198">src/lib/resources.js, line 198</a></dd>
         
     </div>
 
@@ -468,10 +471,9 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -498,8 +500,12 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></span><span class="param-join">|</span><span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -515,8 +521,10 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -543,6 +551,7 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
         
     </section>
 
+        
     
     
 </article>
@@ -553,11 +562,7 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
     
     
     
-    
-
-    
 </article>
-
 <aside class="content-aside">
     
     
@@ -565,20 +570,23 @@ SCIMMY.Resources.declared(&quot;MyResourceType&quot;);
             <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Resources</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-resource-types">Declaring Resource Types</a><ul><li><a href="#extending-resource-types">Extending Resource Types</a></li></ul></li><li><a href="#retrieving-declared-types">Retrieving Declared Types</a></li></ul><ul><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#declaring-resource-types">Declaring Resource Types</a><ul><li><a href="#extending-resource-types">Extending Resource Types</a></li></ul></li><li><a href="#retrieving-declared-types">Retrieving Declared Types</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#declaring-resource-types">Declaring Resource Types</a><ul><li><a href="#extending-resource-types">Extending Resource Types</a></li></ul></li><li><a href="#retrieving-declared-types">Retrieving Declared Types</a></li></ul><ul><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#declaring-resource-types">Declaring Resource Types</a><ul><li><a href="#extending-resource-types">Extending Resource Types</a></li></ul></li><li><a href="#retrieving-declared-types">Retrieving Declared Types</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#classes">Classes</a></h5></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.declare"><span class="type-signature">(static) </span>declare</a></li><li><a href="#.declared"><span class="type-signature">(static) </span>declared</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.776Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:11:00.097Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>

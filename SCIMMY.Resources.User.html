@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>User</h2>
@@ -43,28 +45,39 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul class="active"><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li class="active"><a href="SCIMMY.Resources.User.html" class="active">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul class="active"><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li class="active"><a href="SCIMMY.Resources.User.html" class="active">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>User</h2>
-        <div class="class-description"><p>SCIM User Resource</p></div>
-        <div class="class-summary"><ul>
+        <h2 class="page-title subsection-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>User</h2>
+        <h2 class="class-title">SCIM User Resource</h2>
+    </header>
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+                <div class="class-summary description">
+                    <blockquote>
+                        <strong>Summary:</strong>
+                        <ul>
 <li>Handles read/write/patch/dispose operations for SCIM User resources with specified ingress/egress/degress methods.</li>
 <li>Formats SCIM User resources for transmission/consumption using the <code><a href="SCIMMY.Schemas.User.html">SCIMMY.Schemas.User</a></code> schema class.</li>
-</ul></div>
-    </header>
-    <section id="usage" class="class-usage container-overview">
+</ul>
+                    </blockquote>
+                </div>
+            
+        </header>
         
-            <h3 class="subsection-title">Usage</h3>
+    </section>
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
         
-        <div class="description"><p>Instantiate a new SCIM User resource and parse any supplied parameters</p></div>
-        
+            <div class="description"><p>Instantiate a new SCIM User resource and parse any supplied parameters</p></div>
             <div class="class-signature">
                 <pre class="signature name no-highlight">
                     <code>
@@ -73,9 +86,7 @@
                 </pre>
             </div>
         
-    </section>
-    
-    <section id="details" class="details">
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -88,6 +99,7 @@
         
         
 
+        
         
         
         
@@ -108,7 +120,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L12">src/lib/resources/user.js, line 12</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L12">src/lib/resources/user.js, line 12</a></dd>
         
     </div>
 
@@ -118,218 +130,9 @@
         
         
         
-        
-    <div class="detail props">
-        <dt>Properties:</dt>
-        
-            <dd>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            
-            <th class="last">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        id<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">String</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>ID of the resource instance being targeted</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        filter<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Types.Filter.html">SCIMMY.Types.Filter</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>filter parsed from the supplied config</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        attributes<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type"><a href="SCIMMY.Types.Filter.html">SCIMMY.Types.Filter</a></span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>attributes or excluded attributes parsed from the supplied config</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        constraints<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Object</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>sort and pagination properties parsed from the supplied config</p>
-                
-                    <h6>Properties</h6>
-                    
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            
-            <th class="last">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        sortBy<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">String</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>the attribute retrieved resources should be sorted by</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        sortOrder<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">String</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>the direction retrieved resources should be sorted in</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        startIndex<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Number</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>offset index that retrieved resources should start from</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        count<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Number</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>maximum number of retrieved resources that should be returned in one operation</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-</dd>
-        
-    </div>
-
     </dl>
 </section>
-    
+
     <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -356,8 +159,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default"></td>
@@ -379,8 +186,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default">{}</td>
@@ -413,8 +224,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -434,8 +249,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -455,8 +274,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -476,8 +299,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -497,8 +324,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -518,8 +349,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Number</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -539,8 +374,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Number</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -563,8 +402,250 @@
         </div>
     </section>
 
+
+    <section id="properties" class="props">
+        <h5 class="subsection-title">Properties:</h5>
+        <div class="subsection-content">
+            
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
     
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        id<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">String</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>ID of the resource instance being targeted</p>
+                
+            </td>
+        </tr>
     
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        filter<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type"><a href="SCIMMY.Types.Filter.html">SCIMMY.Types.Filter</a></span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>filter parsed from the supplied config</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        attributes<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type"><a href="SCIMMY.Types.Filter.html">SCIMMY.Types.Filter</a></span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>attributes or excluded attributes parsed from the supplied config</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        constraints<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Object</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>sort and pagination properties parsed from the supplied config</p>
+                
+                    <h6>Properties</h6>
+                    
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        sortBy<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">String</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the attribute retrieved resources should be sorted by</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        sortOrder<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">String</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the direction retrieved resources should be sorted in</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        startIndex<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Number</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>offset index that retrieved resources should start from</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        count<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Number</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>maximum number of retrieved resources that should be returned in one operation</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+        </div>
+    </section>
+
+        
+        
+    </section>
     
     
     
@@ -576,11 +657,9 @@
         <h3 class="subsection-title">Members</h3>
         
             <div class="subsection-content">
-                <article>
+                <article id=".endpoint">
     <header>
-        <h4 class="name" id=".endpoint">
-            <span class="type-signature">(static) </span><span>endpoint</span><span class="type-signature">: String</span>
-        </h4>
+        <h4 class="name"><span class="type-signature">(static) </span>endpoint<span class="type-signature">: String</span></h4>
         
         <div class="description"><p>Retrieves a resource's endpoint relative to the service provider's base URL</p></div>
     </header>
@@ -597,6 +676,7 @@
         
         
 
+        
         
     
     <div class="detail tag-type">
@@ -626,7 +706,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L14">src/lib/resources/user.js, line 14</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L14">src/lib/resources/user.js, line 14</a></dd>
         
     </div>
 
@@ -636,16 +716,19 @@
         
         
         
-        
     </dl>
 </section>
+
+
+    
+        
+        
+        
     
     
-</article><article>
+</article><article id=".schema">
     <header>
-        <h4 class="name" id=".schema">
-            <span class="type-signature">(static) </span><span>schema</span><span class="type-signature">: <a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span>
-        </h4>
+        <h4 class="name"><span class="type-signature">(static) </span>schema<span class="type-signature">: <a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a></span></h4>
         
         <div class="description"><p>Retrieves a resource's core schema</p></div>
     </header>
@@ -662,6 +745,7 @@
         
         
 
+        
         
     
     <div class="detail tag-type">
@@ -691,84 +775,24 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L30">src/lib/resources/user.js, line 30</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L30">src/lib/resources/user.js, line 30</a></dd>
         
     </div>
 
         
 
-        
         
         
         
         
     </dl>
 </section>
+
+
     
-    
-</article><article>
-    <header>
-        <h4 class="name" id=".extensions">
-            <span class="type-signature">(static) </span><span>extensions</span><span class="type-signature">: Object[]</span>
-        </h4>
-        
-        <div class="description"><p>Get the list of registered schema extensions for a resource</p></div>
-    </header>
-    <section  class="details">
-    <dl class="details-list">
         
         
         
-        
-        
-        
-        
-        
-        
-        
-
-        
-    
-    <div class="detail tag-type">
-        <dt>Type:</dt>
-        
-            <dd><span class="signature type-signature">{<span class="param-type">Object[]</span>}</span></dd>
-        
-    </div>
-
-
-        
-        
-        
-        
-        
-        
-    <div class="detail tag-implements">
-        <dt>Implements:</dt>
-        
-            <dd><a href="SCIMMY.Types.Resource.html#.extensions">SCIMMY.Types.Resource.extensions</a></dd>
-        
-    </div>
-
-        
-        
-        
-    <div class="detail tag-source">
-        <dt>Source:</dt>
-        
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L37">src/lib/resources/user.js, line 37</a></dd>
-        
-    </div>
-
-        
-
-        
-        
-        
-        
-        
-    </dl>
-</section>
     
     
 </article>
@@ -776,7 +800,6 @@
         
     </section>
 
-    
     
     <section id="methods" class="child-methods">
         <h3 class="subsection-title">Methods</h3>
@@ -788,7 +811,6 @@
         
         <div class="description"><p>Sets or retrieves the base path for resolution of a resource's location</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -802,6 +824,7 @@
         
         
 
+        
         
         
         
@@ -822,7 +845,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L21">src/lib/resources/user.js, line 21</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L21">src/lib/resources/user.js, line 21</a></dd>
         
     </div>
 
@@ -832,10 +855,9 @@
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -862,8 +884,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -879,8 +905,10 @@
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -903,6 +931,7 @@
         
     </section>
 
+        
     
     
 </article><article id=".ingress">
@@ -911,7 +940,6 @@
         
         <div class="description"><p>Sets the method to be called to consume a resource on create</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -925,6 +953,7 @@
         
         
 
+        
         
         
         
@@ -945,7 +974,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L44">src/lib/resources/user.js, line 44</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L37">src/lib/resources/user.js, line 37</a></dd>
         
     </div>
 
@@ -955,10 +984,9 @@
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -985,8 +1013,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.Resource.html#~gressHandler">~gressHandler</a></span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -1002,8 +1034,10 @@
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1026,6 +1060,7 @@
         
     </section>
 
+        
     
     
 </article><article id=".egress">
@@ -1034,7 +1069,6 @@
         
         <div class="description"><p>Sets the method to be called to retrieve a resource on read</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1048,6 +1082,7 @@
         
         
 
+        
         
         
         
@@ -1068,7 +1103,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L52">src/lib/resources/user.js, line 52</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L45">src/lib/resources/user.js, line 45</a></dd>
         
     </div>
 
@@ -1078,10 +1113,9 @@
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -1108,8 +1142,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.Resource.html#~gressHandler">~gressHandler</a></span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -1125,8 +1163,10 @@
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1149,6 +1189,7 @@
         
     </section>
 
+        
     
     
 </article><article id=".degress">
@@ -1157,7 +1198,6 @@
         
         <div class="description"><p>Sets the method to be called to dispose of a resource on delete</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1171,6 +1211,7 @@
         
         
 
+        
         
         
         
@@ -1191,7 +1232,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L60">src/lib/resources/user.js, line 60</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L53">src/lib/resources/user.js, line 53</a></dd>
         
     </div>
 
@@ -1201,10 +1242,9 @@
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -1231,8 +1271,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type"><a href="SCIMMY.Types.Resource.html#~gressHandler">~gressHandler</a></span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -1248,8 +1292,10 @@
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1272,6 +1318,7 @@
         
     </section>
 
+        
     
     
 </article><article id="read">
@@ -1281,7 +1328,6 @@
         <div class="description"><p>Calls resource's egress method for data retrieval.
 Wraps the results in valid SCIM list response or single resource syntax.</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1302,6 +1348,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
         
         
         
+        
     <div class="detail tag-implements">
         <dt>Implements:</dt>
         
@@ -1315,7 +1362,7 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L83">src/lib/resources/user.js, line 83</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L76">src/lib/resources/user.js, line 76</a></dd>
         
     </div>
 
@@ -1325,12 +1372,13 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
         
         
         
-        
     </dl>
 </section>
+
+
     
-    
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1353,10 +1401,11 @@ Wraps the results in valid SCIM list response or single resource syntax.</p></di
         
     </section>
 
+        
     
     
     <section  class="tag-examples">
-        <h5 class="subsection-title">Examples</h5>
+        <h5 class="subsection-title">Examples:</h5>
         
             <article class="example">
                 
@@ -1378,7 +1427,6 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
         
         <div class="description"><p>Calls resource's ingress method for consumption after unwrapping the SCIM resource</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1399,6 +1447,7 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
         
         
         
+        
     <div class="detail tag-implements">
         <dt>Implements:</dt>
         
@@ -1412,7 +1461,7 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L108">src/lib/resources/user.js, line 108</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L101">src/lib/resources/user.js, line 101</a></dd>
         
     </div>
 
@@ -1422,10 +1471,9 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -1452,8 +1500,12 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -1469,8 +1521,10 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1493,10 +1547,11 @@ await (new SCIMMY.Resources.User({filter: 'email.value -ew "@example.com"'})).re
         
     </section>
 
+        
     
     
     <section  class="tag-examples">
-        <h5 class="subsection-title">Examples</h5>
+        <h5 class="subsection-title">Examples:</h5>
         
             <article class="example">
                 
@@ -1519,7 +1574,6 @@ await (new SCIMMY.Resources.User("1234")).write({userName: "someGuy"});</code></
         <div class="description"><p>Retrieves resources via egress method, and applies specified patch operations.
 Emits patched resources for consumption with resource's ingress method.</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1547,6 +1601,7 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         
         
         
+        
     <div class="detail tag-implements">
         <dt>Implements:</dt>
         
@@ -1560,7 +1615,7 @@ Emits patched resources for consumption with resource's ingress method.</p></div
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L135">src/lib/resources/user.js, line 135</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L128">src/lib/resources/user.js, line 128</a></dd>
         
     </div>
 
@@ -1570,10 +1625,9 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -1600,8 +1654,12 @@ Emits patched resources for consumption with resource's ingress method.</p></div
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -1617,8 +1675,10 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -1641,10 +1701,11 @@ Emits patched resources for consumption with resource's ingress method.</p></div
         
     </section>
 
+        
     
     
     <section  class="tag-examples">
-        <h5 class="subsection-title">Example</h5>
+        <h5 class="subsection-title">Examples:</h5>
         
             <article class="example">
                 
@@ -1660,7 +1721,6 @@ await (new SCIMMY.Resources.User("1234")).patch({Operations: [{op: "add", value:
         
         <div class="description"><p>Calls resource's degress method for disposal of the SCIM resource</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -1681,6 +1741,7 @@ await (new SCIMMY.Resources.User("1234")).patch({Operations: [{op: "add", value:
         
         
         
+        
     <div class="detail tag-implements">
         <dt>Implements:</dt>
         
@@ -1694,7 +1755,7 @@ await (new SCIMMY.Resources.User("1234")).patch({Operations: [{op: "add", value:
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/resources/user.js#L159">src/lib/resources/user.js, line 159</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/resources/user.js#L152">src/lib/resources/user.js, line 152</a></dd>
         
     </div>
 
@@ -1704,16 +1765,18 @@ await (new SCIMMY.Resources.User("1234")).patch({Operations: [{op: "add", value:
         
         
         
-        
     </dl>
 </section>
+
+
     
-    
-    
+        
+        
+        
     
     
     <section  class="tag-examples">
-        <h5 class="subsection-title">Example</h5>
+        <h5 class="subsection-title">Examples:</h5>
         
             <article class="example">
                 
@@ -1731,11 +1794,7 @@ await (new SCIMMY.Resources.User("1234")).dispose();</code></pre>
     
     
     
-    
-
-    
 </article>
-
 <aside class="content-aside">
     
     
@@ -1743,20 +1802,23 @@ await (new SCIMMY.Resources.User("1234")).dispose();</code></pre>
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Resources.html">.Resources</a>.</span>User</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.endpoint"><span class="type-signature">(static) </span>endpoint</a></li><li><a href="#.schema"><span class="type-signature">(static) </span>schema</a></li><li><a href="#.extensions"><span class="type-signature">(static) </span>extensions</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.basepath"><span class="type-signature">(static) </span>basepath</a></li><li><a href="#.ingress"><span class="type-signature">(static) </span>ingress</a></li><li><a href="#.egress"><span class="type-signature">(static) </span>egress</a></li><li><a href="#.degress"><span class="type-signature">(static) </span>degress</a></li><li><a href="#read"><span class="type-signature">(async) </span>read</a></li><li><a href="#write"><span class="type-signature">(async) </span>write</a></li><li><a href="#patch"><span class="type-signature">(async) </span>patch</a></li><li><a href="#dispose"><span class="type-signature">(async) </span>dispose</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.endpoint"><span class="type-signature">(static) </span>endpoint</a></li><li><a href="#.schema"><span class="type-signature">(static) </span>schema</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.basepath"><span class="type-signature">(static) </span>basepath</a></li><li><a href="#.ingress"><span class="type-signature">(static) </span>ingress</a></li><li><a href="#.egress"><span class="type-signature">(static) </span>egress</a></li><li><a href="#.degress"><span class="type-signature">(static) </span>degress</a></li><li><a href="#read"><span class="type-signature">(async) </span>read</a></li><li><a href="#write"><span class="type-signature">(async) </span>write</a></li><li><a href="#patch"><span class="type-signature">(async) </span>patch</a></li><li><a href="#dispose"><span class="type-signature">(async) </span>dispose</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.endpoint"><span class="type-signature">(static) </span>endpoint</a></li><li><a href="#.schema"><span class="type-signature">(static) </span>schema</a></li><li><a href="#.extensions"><span class="type-signature">(static) </span>extensions</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.basepath"><span class="type-signature">(static) </span>basepath</a></li><li><a href="#.ingress"><span class="type-signature">(static) </span>ingress</a></li><li><a href="#.egress"><span class="type-signature">(static) </span>egress</a></li><li><a href="#.degress"><span class="type-signature">(static) </span>degress</a></li><li><a href="#read"><span class="type-signature">(async) </span>read</a></li><li><a href="#write"><span class="type-signature">(async) </span>write</a></li><li><a href="#patch"><span class="type-signature">(async) </span>patch</a></li><li><a href="#dispose"><span class="type-signature">(async) </span>dispose</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.endpoint"><span class="type-signature">(static) </span>endpoint</a></li><li><a href="#.schema"><span class="type-signature">(static) </span>schema</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.basepath"><span class="type-signature">(static) </span>basepath</a></li><li><a href="#.ingress"><span class="type-signature">(static) </span>ingress</a></li><li><a href="#.egress"><span class="type-signature">(static) </span>egress</a></li><li><a href="#.degress"><span class="type-signature">(static) </span>degress</a></li><li><a href="#read"><span class="type-signature">(async) </span>read</a></li><li><a href="#write"><span class="type-signature">(async) </span>write</a></li><li><a href="#patch"><span class="type-signature">(async) </span>patch</a></li><li><a href="#dispose"><span class="type-signature">(async) </span>dispose</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.764Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:11:00.083Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>

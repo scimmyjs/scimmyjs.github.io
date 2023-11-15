@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
@@ -43,21 +45,23 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li class="active"><h4 class="active"><a href="SCIMMY.Config.html" class="active">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li class="active"><h4 class="active"><a href="SCIMMY.Config.html" class="active">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
-        
-        
+        <h2 class="page-title subsection-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
+        <h2 class="class-title hidden">Namespace - SCIMMY.Config</h2>
     </header>
-    <section id="usage" class="class-usage container-overview">
-        
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+        </header>
         <div class="description"><p>SCIMMY provides a singleton class, <code>SCIMMY.Config</code>, that acts as a central store for a SCIM Service Provider's configuration.<br>
 It is used for defining SCIM specification features supported (e.g. PATCH, sort, filter, etc).<br>
 This can be either directly by an implementing service provider, or retrieved by a client (identity provider) from a remote service provider.<br>
@@ -143,10 +147,11 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, [
 // Reset the authenticationSchemes collection
 SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
 </code></pre></div>
-        
     </section>
-    
-    <section id="details" class="details">
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
+        
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -158,6 +163,14 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
+
+        
+    <div class="detail tag-kind">
+        <dt>Kind:</dt>
+        
+            <dd><span class="signature type-signature">singleton</span></dd>
+        
+    </div>
 
         
         
@@ -172,7 +185,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/config.js#L7">src/lib/config.js, line 7</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/config.js#L7">src/lib/config.js, line 7</a></dd>
         
     </div>
 
@@ -182,13 +195,13 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
-        
     </dl>
 </section>
-    
-    
-    
-    
+
+
+        
+        
+    </section>
     
     
     
@@ -207,7 +220,6 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         <div class="description"><p>Get SCIM service provider configuration</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -231,10 +243,11 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/config.js#L123">src/lib/config.js, line 123</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/config.js#L123">src/lib/config.js, line 123</a></dd>
         
     </div>
 
@@ -244,12 +257,13 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
-        
     </dl>
 </section>
+
+
     
-    
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -272,15 +286,15 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
     </section>
 
+        
     
     
 </article><article id=".set">
     <header>
-        <h4 class="name"><span class="type-signature">(static) </span>set<span class="signature">(args, args, args, &hellip;args)</span><span class="type-signature returns"> &rarr; {Object, <a href="SCIMMY.Config.html">SCIMMY.Config</a>}</span></h4>
+        <h4 class="name"><span class="type-signature">(static) </span>set<span class="signature">(&hellip;args)</span><span class="type-signature returns"> &rarr; {Object, <a href="SCIMMY.Config.html">SCIMMY.Config</a>}</span></h4>
         
         <div class="description"><p>Set SCIM service provider configuration</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -304,10 +318,11 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/config.js#L137">src/lib/config.js, line 137</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/config.js#L138">src/lib/config.js, line 138</a></dd>
         
     </div>
 
@@ -317,10 +332,9 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -339,7 +353,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     
         <tr>
             
-                <td class="name">
+                <td class="name" rowspan="4">
                     <code>
                         args<span class="signature-attributes"></span>
                     </code>
@@ -347,8 +361,12 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">(Object|String)[]</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -360,16 +378,14 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     
         <tr>
             
-                <td class="name">
-                    <code>
-                        args<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -381,16 +397,14 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     
         <tr>
             
-                <td class="name">
-                    <code>
-                        args<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -402,16 +416,14 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     
         <tr>
             
-                <td class="name">
-                    <code>
-                        &hellip;args<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span><span class="param-join">|</span><span class="param-type">Boolean</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -427,8 +439,10 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -451,6 +465,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
         
     </section>
 
+        
     
     
 </article>
@@ -461,11 +476,7 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
     
     
     
-    
-
-    
 </article>
-
 <aside class="content-aside">
     
     
@@ -473,20 +484,23 @@ SCIMMY.Config.set(&quot;authenticationSchemes&quot;, []);
             <h2 class="page-title">Namespace: <span class="ancestors"><a href="index.html">SCIMMY</a>.</span>Config</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#retrieving-configuration">Retrieving Configuration</a></li><li><a href="#setting-configuration">Setting Configuration</a><ul><li><a href="#authentication-schemes">Authentication Schemes</a></li></ul></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#.get"><span class="type-signature">(static) </span>get</a></li><li><a href="#.set"><span class="type-signature">(static) </span>set</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.686Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:10:59.982Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>

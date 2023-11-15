@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
@@ -43,38 +45,199 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li class="active"><a href="SCIMMY.Types.Filter.html" class="active">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li><a href="SCIMMY.Messages.ListResponse.html">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li class="active"><h4><a href="SCIMMY.Types.html">Types</a></h4><ul class="active"><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li class="active"><a href="SCIMMY.Types.Filter.html" class="active">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
-        <div class="class-description"><p>SCIM Filter Type</p></div>
-        <div class="class-summary"><ul>
-<li>Parses SCIM <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">filter expressions</a> into object representations of the filter expression, for use in resource retrieval.</li>
-</ul></div>
+        <h2 class="page-title subsection-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
+        <h2 class="class-title">SCIM Filter Type</h2>
     </header>
-    <section id="usage" class="class-usage container-overview">
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+                <div class="class-summary description">
+                    <blockquote>
+                        <strong>Summary:</strong>
+                        <ul>
+<li>Parses SCIM <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">filter expressions</a> into object representations of the filter expression.</li>
+</ul>
+                    </blockquote>
+                </div>
+            
+        </header>
+        <div class="description"><p>This class provides a lexer implementation to tokenise and parse SCIM <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2.2">filter expression</a> strings into meaningful object representations.<br>
+It is used to automatically parse <code>attributes</code>, <code>excludedAttributes</code>, and <code>filter</code> expressions in the <code><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></code> class, and by extension, each Resource implementation.
+The SchemaDefinition <code><a href="SCIMMY.Types.SchemaDefinition.html#coerce">#coerce()</a></code> method uses instances of this class, typically sourced
+from a Resource instance's <code>attributes</code> property, to determine which attributes to include or exclude on coerced resources.
+It is also used for resolving complex multi-valued attribute operations in SCIMMY's <a href="SCIMMY.Messages.PatchOp.html">PatchOp</a> implementation.</p>
+<h3 id="object-representation">Object Representation</h3>
+<p>When instantiated with a valid filter expression string, the expression is parsed into an array of objects representing the given expression.</p>
+<blockquote>
+<p><strong>Note:</strong><br>
+It is also possible to substitute the expression string with an existing or well-formed expression object or set of objects.
+As such, valid filters can be instantiated using any of the object representations below.
+When instantiated this way, the <code>expression</code> property is dynamically generated from the supplied expression objects.</p>
+</blockquote>
+<p>The properties of each object are directly sourced from attribute names parsed in the expression.
+As the class intentionally has no knowledge of the underlying attribute names associated with a schema,
+the properties of the object are case-sensitive, and will match the case of the attribute name provided in the filter.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expressions...
+'userName eq &quot;Test&quot;', and 'uSerName eq &quot;Test&quot;'
+// ...the object representations are
+[ {userName: [&quot;eq&quot;, &quot;Test&quot;]} ], and [ {uSerName: [&quot;eq&quot;, &quot;Test&quot;]} ]
+</code></pre>
+<p>As SCIM attribute names MUST begin with a lower-case letter, they are the exception to this rule,
+and will automatically be cast to lower-case.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expressions...
+'UserName eq &quot;Test&quot;', and 'Name.FamilyName eq &quot;Test&quot;'
+// ...the object representations are
+[ {userName: [&quot;eq&quot;, &quot;Test&quot;]} ], and [ {name: {familyName: [&quot;eq&quot;, &quot;Test&quot;]}} ]
+</code></pre>
+<h4 id="logical-operations">Logical Operations</h4>
+<h5 id="and"><code>and</code></h5>
+<p>For each logical <code>and</code> operation in the expression, a new property is added to the object.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName co &quot;a&quot; and name.formatted sw &quot;Bob&quot; and name.honoraryPrefix eq &quot;Mr&quot;'
+// ...the object representation is
+[ {userName: [&quot;co&quot;, &quot;a&quot;], name: {formatted: [&quot;sw&quot;, &quot;Bob&quot;], honoraryPrefix: [&quot;eq&quot;, &quot;Mr&quot;]}} ]
+</code></pre>
+<p>When an attribute name is specified multiple times in a logical <code>and</code> operation, the expressions are combined into a new array containing each individual expression.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName sw &quot;A&quot; and userName ew &quot;z&quot;'
+// ...the object representation is
+[ {userName: [[&quot;sw&quot;, &quot;A&quot;], [&quot;ew&quot;, &quot;Z&quot;]]} ]
+</code></pre>
+<h5 id="or"><code>or</code></h5>
+<p>For each logical <code>or</code> operation in the expression, a new object is added to the filter array.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName eq &quot;Test&quot; or displayName co &quot;Bob&quot;'
+// ...the object representation is
+[
+    {userName: [&quot;eq&quot;, &quot;Test&quot;]},
+    {displayName: [&quot;co&quot;, &quot;Bob&quot;]}
+]
+</code></pre>
+<p>When the logical <code>or</code> operation is combined with the logical <code>and</code> operation, the <code>and</code> operation takes precedence.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName eq &quot;Test&quot; or displayName co &quot;Bob&quot; and quota gt 5'
+// ...the object representation is
+[
+    {userName: [&quot;eq&quot;, &quot;Test&quot;]},
+    {displayName: [&quot;co&quot;, &quot;Bob&quot;], quota: [&quot;gt&quot;, 5]}
+]
+</code></pre>
+<h5 id="not"><code>not</code></h5>
+<p>Logical <code>not</code> operations in an expression are added to an object property's array of conditions.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'not userName eq &quot;Test&quot;'
+// ...the object representation is
+[ {userName: [&quot;not&quot;, &quot;eq&quot;, &quot;Test&quot;]} ]
+</code></pre>
+<p>For simplicity, the logical <code>not</code> operation is assumed to only apply to the directly following comparison statement in an expression.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName sw &quot;A&quot; and not userName ew &quot;Z&quot; or displayName co &quot;Bob&quot;'
+// ...the object representation is
+[
+    {userName: [[&quot;sw&quot;, &quot;A&quot;], [&quot;not&quot;, &quot;ew&quot;, &quot;Z&quot;]]},
+    {displayName: [&quot;co&quot;, &quot;Bob&quot;]}
+]
+</code></pre>
+<p>If needed, logical <code>not</code> operations can be applied to multiple comparison statements using grouping operations.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userName sw &quot;A&quot; and not (userName ew &quot;Z&quot; or displayName co &quot;Bob&quot;)'
+// ...the object representation is
+[
+    {userName: [[&quot;sw&quot;, &quot;A&quot;], [&quot;not&quot;, &quot;ew&quot;, &quot;Z&quot;]]},
+    {userName: [&quot;sw&quot;, &quot;A&quot;], displayName: [&quot;not&quot;, &quot;co&quot;, &quot;Bob&quot;]}
+]
+</code></pre>
+<h4 id="grouping-operations">Grouping Operations</h4>
+<p>As per the order of operations in the SCIM protocol specification, grouping operations are evaluated ahead of any simpler expressions.</p>
+<p>In more complex scenarios, expressions can be grouped using <code>(</code> and <code>)</code> parentheses to change the standard order of operations.<br>
+This is referred to as <em>precedence grouping</em>.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'userType eq &quot;Employee&quot; and (emails co &quot;example.com&quot; or emails.value co &quot;example.org&quot;)'
+// ...the object representation is
+[
+    {userType: [&quot;eq&quot;, &quot;Employee&quot;], emails: [&quot;co&quot;, &quot;example.com&quot;]},
+    {userType: [&quot;eq&quot;, &quot;Employee&quot;], emails: {value: [&quot;co&quot;, &quot;example.org&quot;]}}
+]
+</code></pre>
+<p>Grouping operations can also be applied to complex attributes using the <code>[</code> and <code>]</code> brackets to create filters that target sub-attributes.<br>
+This is referred to as <em>complex attribute filter grouping</em>.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'emails[type eq &quot;work&quot; and value co &quot;@example.com&quot;] or ims[type eq &quot;xmpp&quot; and value co &quot;@foo.com&quot;]'
+// ...the object representation is
+[
+    {emails: {type: [&quot;eq&quot;, &quot;work&quot;], value: [&quot;co&quot;, &quot;@example.com&quot;]}},
+    {ims: {type: [&quot;eq&quot;, &quot;xmpp&quot;], value: [&quot;co&quot;, &quot;@foo.com&quot;]}}
+]
+</code></pre>
+<p>Complex attribute filter grouping can also be used to target sub-attribute values of multi-valued attributes with specific values.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'emails[type eq &quot;work&quot; or type eq &quot;home&quot;].values[domain ew &quot;@example.org&quot; or domain ew &quot;@example.com&quot;]'
+// ...the object representation is
+[
+    {emails: {type: [&quot;eq&quot;, &quot;work&quot;], values: {domain: [&quot;ew&quot;, &quot;@example.org&quot;]}}},
+    {emails: {type: [&quot;eq&quot;, &quot;work&quot;], values: {domain: [&quot;ew&quot;, &quot;@example.com&quot;]}}},
+    {emails: {type: [&quot;eq&quot;, &quot;home&quot;], values: {domain: [&quot;ew&quot;, &quot;@example.org&quot;]}}},
+    {emails: {type: [&quot;eq&quot;, &quot;home&quot;], values: {domain: [&quot;ew&quot;, &quot;@example.com&quot;]}}}
+]
+</code></pre>
+<p>Precedence and complex attribute filter grouping can also be combined.</p>
+<pre class="prettyprint source lang-js"><code>// For the filter expression...
+'(userType eq &quot;Employee&quot; or userType eq &quot;Manager&quot;) and emails[type eq &quot;work&quot; or (primary eq true and value co &quot;@example.com&quot;)].display co &quot;Work&quot;'
+// ...the object representation is
+[
+    {userType: [&quot;eq&quot;, &quot;Employee&quot;], emails: {type: [&quot;eq&quot;, &quot;work&quot;], display: [&quot;co&quot;, &quot;Work&quot;]}},
+    {userType: [&quot;eq&quot;, &quot;Employee&quot;], emails: {primary: [&quot;eq&quot;, true], value: [&quot;co&quot;, &quot;@example.com&quot;], display: [&quot;co&quot;, &quot;Work&quot;]}},
+    {userType: [&quot;eq&quot;, &quot;Manager&quot;], emails: {type: [&quot;eq&quot;, &quot;work&quot;], display: [&quot;co&quot;, &quot;Work&quot;]}},
+    {userType: [&quot;eq&quot;, &quot;Manager&quot;], emails: {primary: [&quot;eq&quot;, true], value: [&quot;co&quot;, &quot;@example.com&quot;], display: [&quot;co&quot;, &quot;Work&quot;]}}
+]
+</code></pre>
+<h3 id="other-implementations">Other Implementations</h3>
+<p>It is not possible to replace internal use of the Filter class inside SCIMMY's <a href="SCIMMY.Messages.PatchOp.html">PatchOp</a> and <code><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></code> implementations.
+Replacing use in the <code>attributes</code> property of an instance of <code><a href="SCIMMY.Types.Resource.html">SCIMMY.Types.Resource</a></code>, while technically possible, is not recommended,
+as it may break attribute filtering in the <code><a href="SCIMMY.Types.SchemaDefinition.html#coerce">#coerce()</a></code> method of SchemaDefinition instances.</p>
+<p>If SCIMMY's filter expression resource matching does not meet your needs, it can be substituted for another implementation
+(e.g. <a href="https://github.com/thomaspoignant/scim2-parse-filter">scim2-parse-filter</a>) when filtering results within your implementation
+of each resource type's <a href="SCIMMY.Types.Resource.html#.ingress">ingress</a>/<a href="SCIMMY.Types.Resource.html#.egress">egress</a>/<a href="SCIMMY.Types.Resource.html#.degress">degress</a> handler methods.
+See <code><a href="SCIMMY.Types.Resource.html#~gressHandler">SCIMMY.Types.Resource~gressHandler</a></code> for more information on implementing handler methods.</p>
+<pre class="prettyprint source lang-js"><code>// Import the necessary methods from the other implementation, and for accessing your data source
+import {parse, filter} from &quot;scim2-parse-filter&quot;;
+import {users} from &quot;some-database-client&quot;;
+
+// Register your ingress/egress/degress handler method
+SCIMMY.Resources.User.egress(async (resource) => {
+    // Get the original expression string from the resource's filter property...
+    const {expression} = resource.filter;
+    // ...and parse/handle it with the other implementation
+    const f = filter(parse(expression));
+    
+    // Retrieve the data from your data source, and filter it as necessary
+    return await users.find(/some query returning array/).filter(f);
+});
+</code></pre></div>
+    </section>
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
         
-            <h3 class="subsection-title">Usage</h3>
-        
-        <div class="description"><p>Instantiate and parse a new SCIM filter string or expression</p></div>
-        
+            <div class="description"><p>Instantiate and parse a new SCIM filter string or expression</p></div>
             <div class="class-signature">
                 <pre class="signature name no-highlight">
                     <code>
-                        new <span class="ancestors">SCIMMY.Types.</span>Filter<span class="signature">(expression<span class="signature-attributes">opt</span>)</span><span class="type-signature returns"></span>
+                        new <span class="ancestors">SCIMMY.Types.</span>Filter<span class="signature">(expression)</span><span class="type-signature returns"></span>
                     </code>
                 </pre>
             </div>
         
-    </section>
-    
-    <section id="details" class="details">
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -97,10 +260,11 @@
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L34">src/lib/types/filter.js, line 34</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/types/filter.js#L224">src/lib/types/filter.js, line 224</a></dd>
         
     </div>
 
@@ -110,53 +274,9 @@
         
         
         
-        
-    <div class="detail props">
-        <dt>Properties:</dt>
-        
-            <dd>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            
-            <th class="last">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        expression<span class="signature-attributes">opt</span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">String</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>the raw string that was parsed by the filter</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-</dd>
-        
-    </div>
-
     </dl>
 </section>
-    
+
     <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -177,19 +297,23 @@
             
                 <td class="name">
                     <code>
-                        expression<span class="signature-attributes">opt</span>
+                        expression<span class="signature-attributes"></span>
                     </code>
                 </td>
             
 
             <td class="type">
-    <span class="param-type">String</span><span class="param-join">|</span><span class="param-type">Object[]</span>
-</td>
+                <span class="param">
+                    
+    <span class="param-type">String</span><span class="param-join">|</span><span class="param-type">Object</span><span class="param-join">|</span><span class="param-type">Object[]</span>
+
+                </span>
+            </td>
 
             
 
             <td class="description last">
-                <p>the query string to parse, or an existing set of filter expressions</p>
+                <p>the query string to parse, or an existing filter expression object or set of objects</p>
                 
             </td>
         </tr>
@@ -200,6 +324,10 @@
         </div>
     </section>
 
+
+        
+        
+    </section>
     
     
     
@@ -207,9 +335,77 @@
     
     
     
+    <section id="members" class="child-members">
+        <h3 class="subsection-title">Members</h3>
+        
+            <div class="subsection-content">
+                <article id="expression">
+    <header>
+        <h4 class="name">expression<span class="type-signature">: String</span></h4>
+        
+        <div class="description"><p>The original string that was parsed by the filter, or the stringified representation of filter expression objects</p></div>
+    </header>
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">String</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/types/filter.js#L234">src/lib/types/filter.js, line 234</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+    </dl>
+</section>
+
+
+    
+        
+        
+        
     
     
-    
+</article>
+            </div>
+        
+    </section>
+
     
     <section id="methods" class="child-methods">
         <h3 class="subsection-title">Methods</h3>
@@ -221,7 +417,6 @@
         
         <div class="description"><p>Compare and filter a given set of values against this filter instance</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -245,10 +440,11 @@
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L71">src/lib/types/filter.js, line 71</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/types/filter.js#L270">src/lib/types/filter.js, line 270</a></dd>
         
     </div>
 
@@ -258,10 +454,9 @@
         
         
         
-        
     </dl>
 </section>
-    
+
     <section  class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -288,8 +483,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object[]</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -305,8 +504,10 @@
         </div>
     </section>
 
+
     
-    
+        
+        
     <section class="returns">
         
         <h5 class="subsection-title">Returns:</h5>
@@ -329,6 +530,7 @@
         
     </section>
 
+        
     
     
 </article>
@@ -339,20 +541,16 @@
     
     
     
-    
-
-    
     <section id="constants" class="child-constants">
         <h3 class="subsection-title">Constants</h3>
         
             <div class="subsection-content">
                 <article id="~ValidLogicStrings">
     <header>
-        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidLogicStrings<span class="type-signature">: String[]</span></h4>
+        <h4 class="name"><span class="type-signature">(inner) </span>ValidLogicStrings<span class="type-signature">: String[]</span></h4>
         
         <div class="description"><p>Collection of valid logical operator strings in a filter expression</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -374,6 +572,7 @@
     </div>
 
         
+        
     
     <div class="detail tag-type">
         <dt>Type:</dt>
@@ -395,7 +594,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L13">src/lib/types/filter.js, line 13</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/types/filter.js#L13">src/lib/types/filter.js, line 13</a></dd>
         
     </div>
 
@@ -405,21 +604,22 @@
         
         
         
-        
     </dl>
 </section>
+
+
     
-    
-    
+        
+        
+        
     
     
 </article><article id="~ValidComparisonStrings">
     <header>
-        <h4 class="name"><span class="type-signature">(inner, constant) </span>ValidComparisonStrings<span class="type-signature">: String[]</span></h4>
+        <h4 class="name"><span class="type-signature">(inner) </span>ValidComparisonStrings<span class="type-signature">: String[]</span></h4>
         
         <div class="description"><p>Collection of valid comparison operator strings in a filter expression</p></div>
     </header>
-    
     <section  class="details">
     <dl class="details-list">
         
@@ -441,6 +641,7 @@
     </div>
 
         
+        
     
     <div class="detail tag-type">
         <dt>Type:</dt>
@@ -462,7 +663,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/types/filter.js#L24">src/lib/types/filter.js, line 24</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/types/filter.js#L24">src/lib/types/filter.js, line 24</a></dd>
         
     </div>
 
@@ -472,12 +673,14 @@
         
         
         
-        
     </dl>
 </section>
+
+
     
-    
-    
+        
+        
+        
     
     
 </article>
@@ -486,7 +689,6 @@
     </section>
 
 </article>
-
 <aside class="content-aside">
     
     
@@ -494,20 +696,23 @@
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Types.html">.Types</a>.</span>Filter</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#object-representation">Object Representation</a><ul><li><a href="#logical-operations">Logical Operations</a><ul><li><a href="#and">and</a></li><li><a href="#or">or</a></li><li><a href="#not">not</a></li></ul></li><li><a href="#grouping-operations">Grouping Operations</a></li></ul></li><li><a href="#other-implementations">Other Implementations</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#expression">expression</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5><ul class="no-indent"><li><a href="#object-representation">Object Representation</a><ul><li><a href="#logical-operations">Logical Operations</a><ul><li><a href="#and">and</a></li><li><a href="#or">or</a></li><li><a href="#not">not</a></li></ul></li><li><a href="#grouping-operations">Grouping Operations</a></li></ul></li><li><a href="#other-implementations">Other Implementations</a></li></ul></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#expression">expression</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#match">match</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ValidLogicStrings">ValidLogicStrings</a></li><li><a href="#~ValidComparisonStrings">ValidComparisonStrings</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.849Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:11:00.203Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>

@@ -21,7 +21,9 @@
                 
             </a>
             
-                <span class="package-version type-signature">0.10.0</span>
+                <span class="package-version">
+                    <span class="type-signature">1.0.0</span>
+                </span>
             
         </h1>
         <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>ListResponse</h2>
@@ -43,27 +45,38 @@
     </header>
     <nav class="page-nav">
         <label class="hidden" for="tiny-page-nav"></label>
-        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav"  autocomplete="off"/>
+        <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li class="active"><a href="SCIMMY.Messages.ListResponse.html" class="active">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.Error.html">Error</a></li><li class="active"><a href="SCIMMY.Messages.ListResponse.html" class="active">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
         </div>
     </nav>
     <main id="main">
         
-    <article class="content-container class-definition">
+<article class="content-container class-definition">
     <header class="section-header">
-        <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>ListResponse</h2>
-        <div class="class-description"><p>SCIM List Response Message Type</p></div>
-        <div class="class-summary"><ul>
-<li>Formats supplied service provider resources as <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse messages</a>, handling pagination and sort when required.</li>
-</ul></div>
+        <h2 class="page-title subsection-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>ListResponse</h2>
+        <h2 class="class-title">SCIM List Response Message</h2>
     </header>
-    <section id="usage" class="class-usage container-overview">
+    <section id="description" class="container-overview">
+        <header>
+            <h3 class="hidden">Description</h3>
+            
+                <div class="class-summary description">
+                    <blockquote>
+                        <strong>Summary:</strong>
+                        <ul>
+<li>Formats supplied service provider resources as <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse messages</a>, handling pagination and sort when required.</li>
+</ul>
+                    </blockquote>
+                </div>
+            
+        </header>
         
-            <h3 class="subsection-title">Usage</h3>
+    </section>
+    <section id="usage" class="class-usage">
+        <h3 class="subsection-title">Usage</h3>
         
-        <div class="description"><p>Instantiate a new SCIM List Response Message with relevant details</p></div>
-        
+            <div class="description"><p>Instantiate a new SCIM List Response Message with relevant details</p></div>
             <div class="class-signature">
                 <pre class="signature name no-highlight">
                     <code>
@@ -72,9 +85,7 @@
                 </pre>
             </div>
         
-    </section>
-    
-    <section id="details" class="details">
+        <section id="details" class="details">
     <dl class="details-list">
         
         
@@ -97,10 +108,11 @@
         
         
         
+        
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/7f05fac4b94dea4ffe073c4be84848524f9ae7d8/src/lib/messages/listresponse.js#L7">src/lib/messages/listresponse.js, line 7</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/8f2fd81fd0d9da58b3d2d61a3f2ac74be5259e97/src/lib/messages/listresponse.js#L7">src/lib/messages/listresponse.js, line 7</a></dd>
         
     </div>
 
@@ -110,116 +122,9 @@
         
         
         
-        
-    <div class="detail props">
-        <dt>Properties:</dt>
-        
-            <dd>
-
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            
-            <th class="last">Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        Resources<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">(Object|<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>)[]</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>resources included in the list response</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        totalResults<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Number</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>the total number of resources matching a given request</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        startIndex<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Number</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>index within total results that included resources start from</p>
-                
-            </td>
-        </tr>
-    
-        <tr>
-            
-                <td class="name">
-                    <code>
-                        itemsPerPage<span class="signature-attributes"></span>
-                    </code>
-                </td>
-            
-
-            <td class="type">
-    <span class="param-type">Number</span>
-</td>
-
-            
-
-            <td class="description last">
-                <p>maximum number of items returned in this list response</p>
-                
-            </td>
-        </tr>
-    
-    </tbody>
-</table>
-</dd>
-        
-    </div>
-
     </dl>
 </section>
-    
+
     <section id="params" class="params">
         <h5 class="subsection-title">Parameters:</h5>
         <div class="subsection-content">
@@ -246,8 +151,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span><span class="param-join">|</span><span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>[]</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -267,8 +176,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Object</span>
-</td>
+
+                </span>
+            </td>
 
             
 
@@ -299,8 +212,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default"></td>
@@ -322,8 +239,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">String</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default">"ascending"</td>
@@ -345,8 +266,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Number</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default">1</td>
@@ -368,8 +293,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Number</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default">20</td>
@@ -391,8 +320,12 @@
             
 
             <td class="type">
+                <span class="param">
+                    
     <span class="param-type">Number</span>
-</td>
+
+                </span>
+            </td>
 
             
                 <td class="default">20</td>
@@ -417,25 +350,144 @@
         </div>
     </section>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
+    <section id="properties" class="props">
+        <h5 class="subsection-title">Properties:</h5>
+        <div class="subsection-content">
+            
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        Resources<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">(Object|<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>)[]</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>resources included in the list response</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        totalResults<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Number</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the total number of resources matching a given request</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        startIndex<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Number</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>index within total results that included resources start from</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        itemsPerPage<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    
+    <span class="param-type">Number</span>
+
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>maximum number of items returned in this list response</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+        </div>
+    </section>
+
+        
+        
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 </article>
-
 <aside class="content-aside">
     
     
@@ -443,20 +495,23 @@
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>ListResponse</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <ul><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#params">Parameters</a></li></ul></li></ul>
+                <ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li></ul>
             </nav>
         </div>
     
 </aside>
         <footer>
-            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a>
-             - 2021-11-15T07:45:02.706Z
+            Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a>
+            using <a href="https://github.com/sleelin/classy-template">classy-template</a>
+            
+                <span class="creation-timestamp">2023-11-15T07:11:00.018Z</span>
+            
         </footer>
     </main>
     <script>hljs.highlightAll();</script>
