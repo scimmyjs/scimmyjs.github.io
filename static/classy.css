@@ -60,7 +60,6 @@
 }
 
 html {
-    overflow: auto;
     font-size: 0.875rem;
 }
 
@@ -229,7 +228,7 @@ header {
     height: 100%;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: max-content 1fr;
     grid-column-gap: 10px;
     align-items: center;
     justify-self: start;
@@ -301,7 +300,6 @@ header {
 /********************************/
 main {
     height: 100%;
-    overflow: scroll;
     display: grid;
     grid-template-columns: calc(100vw - var(--gutter-width-left) - var(--gutter-width-right)) min-content;
     grid-template-rows: max-content 1fr;
@@ -445,7 +443,6 @@ nav {
     display: block;
     box-sizing: border-box;
     margin-top: 15px;
-    overflow: scroll;
 }
 
 nav ul {
@@ -726,7 +723,6 @@ code {
     margin: 0;
     font-size: 85%;
     border-radius: 6px;
-    overflow: scroll;
 }
 
 code, .hljs {
@@ -994,7 +990,7 @@ code, .hljs {
     
     /* Enable wide content scrolling */
     .params .subsection-content, .props dd {
-        overflow: scroll;
+        overflow-x: scroll;
         position: relative;
         z-index: 1;
         box-sizing: border-box;
@@ -1097,7 +1093,6 @@ code, .hljs {
         transform: translateX(0);
         transition: transform 0.3s ease-in-out;
         z-index: 999999;
-        overflow: scroll;
         font-size: 1.3em;
         padding: 10px 25px 0 15px;
         box-sizing: border-box;
