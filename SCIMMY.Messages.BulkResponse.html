@@ -23,7 +23,7 @@
             </a>
             
                 <span class="package-version">
-                    <span class="type-signature">1.3.1</span>
+                    <span class="type-signature">1.3.2</span>
                 </span>
             
         </h1>
@@ -121,7 +121,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/14e1eda62a38681f3d1ce96c4dd847544de761d4/src/lib/messages/bulkresponse.js#L9">src/lib/messages/bulkresponse.js, line 9</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/56259bb833b575a61b4e49838b98d5d823566d40/src/lib/messages/bulkresponse.js#L9">src/lib/messages/bulkresponse.js, line 9</a></dd>
         
     </div>
 
@@ -152,7 +152,7 @@
     
         <tr>
             
-                <td class="name">
+                <td class="name" rowspan="2">
                     <code>
                         request<span class="signature-attributes"></span>
                     </code>
@@ -162,9 +162,7 @@
             <td class="type">
                 <span class="param">
                     <code>
-    <span class="param-type">Object</span>
-</code><code>
-    <span class="param-type">Object[]</span>
+    <span class="param-type"><a href="SCIMMY.Messages.BulkResponse.html#~BulkOpResponse">~BulkOpResponse</a>[]</span>
 </code>
                 </span>
             </td>
@@ -172,7 +170,26 @@
             
 
             <td class="description last">
-                <p>contents of the BulkResponse if object, or results of performed operations if array</p>
+                <p>results of performed operations if array</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">Object</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>contents of the received BulkResponse message if object</p>
                 
                     <h6>Properties</h6>
                     
@@ -192,7 +209,7 @@
             
                 <td class="name">
                     <code>
-                        Operations<span class="signature-attributes">opt</span>
+                        Operations<span class="signature-attributes"></span>
                     </code>
                 </td>
             
@@ -200,7 +217,7 @@
             <td class="type">
                 <span class="param">
                     <code>
-    <span class="param-type">Object[]</span>
+    <span class="param-type"><a href="SCIMMY.Messages.BulkResponse.html#~BulkOpResponse">~BulkOpResponse</a>[]</span>
 </code>
                 </span>
             </td>
@@ -208,7 +225,7 @@
             
 
             <td class="description last">
-                <p>list of applied SCIM-compliant bulk operation results, if request is an object</p>
+                <p>list of SCIM-compliant bulk operation results</p>
                 
             </td>
         </tr>
@@ -255,7 +272,7 @@
             <td class="type">
                 <span class="param">
                     <code>
-    <span class="param-type">Object[]</span>
+    <span class="param-type"><a href="SCIMMY.Messages.BulkResponse.html#~BulkOpResponse">~BulkOpResponse</a>[]</span>
 </code>
                 </span>
             </td>
@@ -322,7 +339,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/14e1eda62a38681f3d1ce96c4dd847544de761d4/src/lib/messages/bulkresponse.js#L44">src/lib/messages/bulkresponse.js, line 44</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/56259bb833b575a61b4e49838b98d5d823566d40/src/lib/messages/bulkresponse.js#L74">src/lib/messages/bulkresponse.js, line 74</a></dd>
         
     </div>
 
@@ -370,8 +387,316 @@
     </section>
 
     
+    <section id="typedefs" class="child-typedefs">
+        <h3 class="subsection-title">Type Definitions</h3>
+        
+            <div class="subsection-content">
+                <article id="~BulkOpResponse">
+    <header>
+        <h4 class="name">BulkOpResponse</h4>
+        
+        <div class="description"><p>BulkResponse operation details for a given BulkRequest operation</p></div>
+    </header>
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">Object</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/56259bb833b575a61b4e49838b98d5d823566d40/src/lib/messages/bulkresponse.js#L23">src/lib/messages/bulkresponse.js, line 23</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+    </dl>
+</section>
+
+
+    <section  class="props">
+        <h5 class="subsection-title">Properties:</h5>
+        <div class="subsection-content">
+            
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        location<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">String</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>canonical URI for the target resource of the operation</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        method<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type"><a href="SCIMMY.Messages.BulkRequest.html#~ValidBulkMethods">~ValidBulkMethods</a></span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the HTTP method used for the requested operation</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        bulkId<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">String</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the transient identifier of a newly created resource, unique within a bulk request and created by the client</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        version<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">String</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>resource version after operation has been applied</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        status<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type"><a href="SCIMMY.Messages.BulkResponse.html#~ResponseStatusCodes">~ResponseStatusCodes</a></span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the HTTP response status code for the requested operation</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        response<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">Object</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>the HTTP response body for the specified request operation</p>
+                
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+        </div>
+    </section>
+
     
     
+</article>
+            </div>
+        
+    </section>
+
+    
+    
+    <section id="constants" class="child-constants">
+        <h3 class="subsection-title">Constants</h3>
+        
+            <div class="subsection-content">
+                <article id="~ResponseStatusCodes">
+    <header>
+        <h4 class="name"><span class="type-signature">(inner) </span>ResponseStatusCodes<span class="type-signature"></span></h4>
+        
+        <div class="description"><p>BulkResponse operation response status codes</p></div>
+    </header>
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    <div class="detail tag-enum">
+        <dt>Values:</dt>
+        
+            <dd><pre class="prettyprint lang-json"><code>["200","201","204","307","308","400","401","403","404","409","412","500","501"]</code></pre></dd>
+        
+    </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/56259bb833b575a61b4e49838b98d5d823566d40/src/lib/messages/bulkresponse.js#L17">src/lib/messages/bulkresponse.js, line 17</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+    </dl>
+</section>
+
+
+    
+        
+        
+        
+    
+    
+</article>
+            </div>
+        
+    </section>
+
 </article>
 <aside class="content-aside">
     
@@ -380,13 +705,13 @@
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>BulkResponse</h2>
             <details class="content-toc">
                 <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#resolve">resolve</a></li></ul></li></ul></nav>
+                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#resolve">resolve</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~BulkOpResponse">BulkOpResponse</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ResponseStatusCodes">ResponseStatusCodes</a></li></ul></li></ul></nav>
             </details>
         </div>
         <div class="toc-regular">
             <nav class="content-nav">
                 <h5 class="toc-title">Table of Contents</h5>
-                <div class="toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#resolve">resolve</a></li></ul></li></ul></div>
+                <div class="toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#methods">Methods</a></h5><ul><li><a href="#resolve">resolve</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~BulkOpResponse">BulkOpResponse</a></li></ul></li><li><h5 class="toc-section"><a href="#constants">Constants</a></h5><ul><li><a href="#~ResponseStatusCodes">ResponseStatusCodes</a></li></ul></li></ul></div>
             </nav>
         </div>
     
@@ -395,7 +720,7 @@
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a>
             using <a href="https://github.com/sleelin/classy-template">classy-template</a>
             
-                <span class="creation-timestamp">2024-12-11T04:56:22.198Z</span>
+                <span class="creation-timestamp">2025-01-06T09:38:10.275Z</span>
             
         </footer>
     </main>
