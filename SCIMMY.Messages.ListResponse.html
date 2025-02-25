@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SCIMMY: Class - SCIMMY.Messages.ListResponse</title>
+    <title>Class: SCIMMY.Messages.ListResponse - SCIMMY</title>
     <script src="static/classy.js"></script>
     <script src="static/highlight/highlight.min.js"></script>
     <script src="static/highlight/langs/javascript.min.js"></script>
@@ -23,7 +23,7 @@
             </a>
             
                 <span class="package-version">
-                    <span class="type-signature">1.3.3</span>
+                    <span class="type-signature">1.3.4</span>
                 </span>
             
         </h1>
@@ -34,7 +34,7 @@
                     <img alt="View Source on GitHub" src="static/assets/github.png" />
                 </a>
             
-            <div class="page-nav-toggle tiny-page-nav-toggle">
+            <div class="page-nav-toggle">
                 <input type="checkbox" name="tiny-page-nav-toggle" id="tiny-page-nav-toggle" autocomplete="off"/>
                 <label for="tiny-page-nav-toggle">
                     <span></span>
@@ -48,7 +48,7 @@
         <label class="hidden" for="tiny-page-nav"></label>
         <input class="hidden tiny-page-nav-target" type="checkbox" id="tiny-page-nav" autocomplete="off"/>
         <div class="nav-content">
-            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><h4><a href="SCIMMY.Messages.html">Messages</a></h4><ul class="active"><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.ErrorResponse.html">ErrorResponse</a></li><li class="active"><a href="SCIMMY.Messages.ListResponse.html" class="active">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></li><li><h4><a href="SCIMMY.Resources.html">Resources</a></h4><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></li><li><h4><a href="SCIMMY.Types.html">Types</a></h4><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></li></ul>
+            <h3>API</h3><ul class="active"><li><h4><a href="SCIMMY.Config.html">Config</a></h4></li><li class="active"><details class="active" open="open"><summary><h4><a href="SCIMMY.Messages.html">Messages</a></h4></summary><ul class="active"><li><a href="SCIMMY.Messages.BulkRequest.html">BulkRequest</a></li><li><a href="SCIMMY.Messages.BulkResponse.html">BulkResponse</a></li><li><a href="SCIMMY.Messages.ErrorResponse.html">ErrorResponse</a></li><li class="active"><a href="SCIMMY.Messages.ListResponse.html" class="active">ListResponse</a></li><li><a href="SCIMMY.Messages.PatchOp.html">PatchOp</a></li><li><a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a></li></ul></details></li><li><details><summary><h4><a href="SCIMMY.Resources.html">Resources</a></h4></summary><ul><li><a href="SCIMMY.Resources.Group.html">Group</a></li><li><a href="SCIMMY.Resources.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Resources.Schema.html">Schema</a></li><li><a href="SCIMMY.Resources.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Resources.User.html">User</a></li></ul></details></li><li><details><summary><h4><a href="SCIMMY.Schemas.html">Schemas</a></h4></summary><ul><li><a href="SCIMMY.Schemas.EnterpriseUser.html">EnterpriseUser</a></li><li><a href="SCIMMY.Schemas.Group.html">Group</a></li><li><a href="SCIMMY.Schemas.ResourceType.html">ResourceType</a></li><li><a href="SCIMMY.Schemas.ServiceProviderConfig.html">ServiceProviderConfig</a></li><li><a href="SCIMMY.Schemas.User.html">User</a></li></ul></details></li><li><details><summary><h4><a href="SCIMMY.Types.html">Types</a></h4></summary><ul><li><a href="SCIMMY.Types.Attribute.html">Attribute</a></li><li><a href="SCIMMY.Types.SchemaDefinition.html">SchemaDefinition</a></li><li><a href="SCIMMY.Types.Error.html">Error</a></li><li><a href="SCIMMY.Types.Filter.html">Filter</a></li><li><a href="SCIMMY.Types.Resource.html">Resource</a></li><li><a href="SCIMMY.Types.Schema.html">Schema</a></li></ul></details></li></ul>
         </div>
     </nav>
     <main id="main">
@@ -72,7 +72,14 @@
                 </div>
             
         </header>
-        
+        <div class="description"><p>The <code>ListResponse</code> class creates a SCIM <a href="https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2">ListResponse message</a> for a supplied set of resources, and automates pagination and sorting of the included set.
+It is used internally by the <code>read()</code> method in each of <a href="SCIMMY.Resources.html">SCIMMY's Resource classes</a> when requesting a list of resources matching a given query,
+and in the <a href="SCIMMY.Messages.SearchRequest.html#apply"><code>apply()</code></a> instance method of the <a href="SCIMMY.Messages.SearchRequest.html">SearchRequest</a> message class.</p>
+<blockquote>
+<p><strong>Tip:</strong><br>
+When using the <a href="SCIMMY.Resources.User.html"><code>User</code></a> and <a href="SCIMMY.Resources.Group.html"><code>Group</code></a> resource classes, their instance <code>read()</code> methods will wrap the set of matching query results in a <code>ListResponse</code> instance.
+This happens automatically when retrieving multiple resources, meaning their <a href="SCIMMY.Types.Resource.html#~EgressHandler">egress handlers</a> need only return the array of matching resources, not a <code>ListResponse</code> instance of their own.</p>
+</blockquote></div>
     </section>
     <section id="usage" class="class-usage">
         <h3 class="subsection-title">Usage</h3>
@@ -113,7 +120,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/580d2e42e3762068bfb3474411acd6d1faf695f5/src/lib/messages/listresponse.js#L7">src/lib/messages/listresponse.js, line 7</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/d06c8ba8f125c72619ae8c2267a833d1a6054e9c/src/lib/messages/listresponse.js#L39">src/lib/messages/listresponse.js, line 39</a></dd>
         
     </div>
 
@@ -154,7 +161,7 @@
             <td class="type">
                 <span class="param">
                     <code>
-    <span class="param-type">Object</span>
+    <span class="param-type"><a href="SCIMMY.Messages.ListResponse.html">SCIMMY.Messages.ListResponse</a></span>
 </code><code>
     <span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>[]</span>
 </code>
@@ -204,6 +211,99 @@
         </tr>
     </thead>
     <tbody>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        sortBy<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">String</span>
+</code>
+                </span>
+            </td>
+
+            
+                <td class="default">
+                    <pre class="prettyprint lang-json">
+                        <code></code>
+                    </pre>
+                </td>
+            
+
+            <td class="description last">
+                <p>the attribute to sort results by, if any</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        sortOrder<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">String</span>
+</code>
+                </span>
+            </td>
+
+            
+                <td class="default">
+                    <pre class="prettyprint lang-json">
+                        <code>"ascending"</code>
+                    </pre>
+                </td>
+            
+
+            <td class="description last">
+                <p>the direction to sort results in, if sortBy is specified</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        startIndex<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">Number</span>
+</code>
+                </span>
+            </td>
+
+            
+                <td class="default">
+                    <pre class="prettyprint lang-json">
+                        <code>1</code>
+                    </pre>
+                </td>
+            
+
+            <td class="description last">
+                <p>offset index that items start from</p>
+                
+            </td>
+        </tr>
     
         <tr>
             
@@ -267,6 +367,37 @@
             </td>
         </tr>
     
+        <tr>
+            
+                <td class="name">
+                    <code>
+                        totalResults<span class="signature-attributes">opt</span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type">Number</span>
+</code>
+                </span>
+            </td>
+
+            
+                <td class="default">
+                    <pre class="prettyprint lang-json">
+                        <code></code>
+                    </pre>
+                </td>
+            
+
+            <td class="description last">
+                <p>the total number of resources matching a given request</p>
+                
+            </td>
+        </tr>
+    
     </tbody>
 </table>
 
@@ -301,6 +432,31 @@
             
                 <td class="name">
                     <code>
+                        schemas<span class="signature-attributes"></span>
+                    </code>
+                </td>
+            
+
+            <td class="type">
+                <span class="param">
+                    <code>
+    <span class="param-type"><a href="SCIMMY.Messages.ListResponse.html#.id">SCIMMY.Messages.ListResponse.id</a>[]</span>
+</code>
+                </span>
+            </td>
+
+            
+
+            <td class="description last">
+                <p>list exclusively containing the SCIM ListResponse message schema ID</p>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            
+                <td class="name">
+                    <code>
                         Resources<span class="signature-attributes"></span>
                     </code>
                 </td>
@@ -309,7 +465,7 @@
             <td class="type">
                 <span class="param">
                     <code>
-    <span class="param-type">(Object|<a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>)[]</span>
+    <span class="param-type"><a href="SCIMMY.Types.Schema.html">SCIMMY.Types.Schema</a>[]</span>
 </code>
                 </span>
             </td>
@@ -405,6 +561,40 @@
 
         
         
+    <section id="examples" class="tag-examples">
+        <h5 class="subsection-title">Examples:</h5>
+        
+            <article class="example">
+                <div class="example-caption">Basic usage with no constraints</div>
+                <pre class="example-code prettyprint"><code>// Retrieve the list of resources from somewhere, and pass it to the ListResponse constructor
+const resources = [{id: "1", userName: "AdeleV"}, {id: "2", userName: "GradyA"}];
+const response = new SCIMMY.Messages.ListResponse(resources);</code></pre>
+            </article>
+        
+            <article class="example">
+                <div class="example-caption">Basic usage with specified total results</div>
+                <pre class="example-code prettyprint"><code>// Retrieve the list of resources from somewhere...
+const resources = [{id: "1", userName: "AdeleV"}, {id: "2", userName: "GradyA"}];
+// ...and separately retrieve the total number of matching results
+const totalResults = 1005;
+
+// Instantiate the list response with the resources array, specifying totalResults
+const response = new SCIMMY.Messages.ListResponse(resources, {totalResults});</code></pre>
+            </article>
+        
+            <article class="example">
+                <div class="example-caption">Advanced usage with manipulation of array length</div>
+                <pre class="example-code prettyprint"><code>// Retrieve the list of resources from somewhere...
+const resources = [{id: "1", userName: "AdeleV"}, {id: "2", userName: "GradyA"}];
+// ...and set the length of the list to match the desired total
+resources.length = 1005;
+
+// Instantiate the list response with the (mostly) sparse resources array
+const response = new SCIMMY.Messages.ListResponse(resources, {itemsPerPage: 2});</code></pre>
+            </article>
+        
+    </section>
+
     </section>
     
     
@@ -413,6 +603,77 @@
     
     
     
+    <section id="members" class="child-members">
+        <h3 class="subsection-title">Members</h3>
+        
+            <div class="subsection-content">
+                <article id=".id">
+    <header>
+        <h4 class="name"><span class="type-signature">(static) </span>id<span class="type-signature">: "urn:ietf:params:scim:api:messages:2.0:ListResponse"</span></h4>
+        
+        <div class="description"><p>SCIM List Response Message Schema ID</p></div>
+    </header>
+    <section  class="details">
+    <dl class="details-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+    
+    <div class="detail tag-type">
+        <dt>Type:</dt>
+        
+            <dd><span class="signature type-signature">{<span class="param-type">"urn:ietf:params:scim:api:messages:2.0:ListResponse"</span>}</span></dd>
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="detail tag-source">
+        <dt>Source:</dt>
+        
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/d06c8ba8f125c72619ae8c2267a833d1a6054e9c/src/lib/messages/listresponse.js#L47">src/lib/messages/listresponse.js, line 47</a></dd>
+        
+    </div>
+
+        
+
+        
+        
+        
+        
+    </dl>
+</section>
+
+
+    
+        
+        
+        
+    
+    
+</article>
+            </div>
+        
+    </section>
+
     
     
     <section id="typedefs" class="child-typedefs">
@@ -461,7 +722,7 @@
     <div class="detail tag-source">
         <dt>Source:</dt>
         
-            <dd><a href="https://github.com/scimmyjs/scimmy/blob/580d2e42e3762068bfb3474411acd6d1faf695f5/src/lib/messages/listresponse.js#L15">src/lib/messages/listresponse.js, line 15</a></dd>
+            <dd><a href="https://github.com/scimmyjs/scimmy/blob/d06c8ba8f125c72619ae8c2267a833d1a6054e9c/src/lib/messages/listresponse.js#L51">src/lib/messages/listresponse.js, line 51</a></dd>
         
     </div>
 
@@ -634,17 +895,17 @@
 <aside class="content-aside">
     
     
-        <div class="toc-tiny">
+        <div class="toc toc-tiny">
             <h2 class="page-title">Class: <span class="ancestors"><a href="index.html">SCIMMY</a><a href="SCIMMY.Messages.html">.Messages</a>.</span>ListResponse</h2>
-            <details class="content-toc">
-                <summary>Table of Contents</summary>
-                <nav class="content-toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~ListConstraints">ListConstraints</a></li></ul></li></ul></nav>
+            <details class="toc-container">
+                <summary class="toc-title">Table of Contents</summary>
+                <nav class="toc-content"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.id"><span class="type-signature">(static) </span>id</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~ListConstraints">ListConstraints</a></li></ul></li></ul></nav>
             </details>
         </div>
-        <div class="toc-regular">
-            <nav class="content-nav">
+        <div class="toc toc-regular">
+            <nav class="toc-container">
                 <h5 class="toc-title">Table of Contents</h5>
-                <div class="toc"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~ListConstraints">ListConstraints</a></li></ul></li></ul></div>
+                <div class="toc-content"><ul><li><h5 class="toc-section"><a href="#description">Description</a></h5></li><li><h5 class="toc-section"><a href="#usage">Usage</a></h5><ul><li><a href="#details">Details</a></li><li><a href="#params">Parameters</a></li><li><a href="#properties">Properties</a></li><li><a href="#examples">Examples</a></li></ul></li><li><h5 class="toc-section"><a href="#members">Members</a></h5><ul><li><a href="#.id"><span class="type-signature">(static) </span>id</a></li></ul></li><li><h5 class="toc-section"><a href="#typedefs">Type Definitions</a></h5><ul><li><a href="#~ListConstraints">ListConstraints</a></li></ul></li></ul></div>
             </nav>
         </div>
     
@@ -653,7 +914,7 @@
             Generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a>
             using <a href="https://github.com/sleelin/classy-template">classy-template</a>
             
-                <span class="creation-timestamp">2025-01-08T05:16:30.790Z</span>
+                <span class="creation-timestamp">2025-02-25T05:36:08.628Z</span>
             
         </footer>
     </main>
